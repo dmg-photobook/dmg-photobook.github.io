@@ -1,0 +1,374 @@
+<!DOCTYPE HTML>
+<!--
+	Phantom by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>Dataset - The PhotoBook Task and Dataset</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+	</head>
+	<body class="is-preload">
+		<!-- Wrapper -->
+			<div id="wrapper">
+
+				<!-- Header -->
+					<header id="header">
+						<div class="inner">
+
+							<!-- Logo -->
+								<a href="index.html">Home</a>
+								
+
+							<!-- Nav -->
+								<nav>
+									<ul>
+										<li><a href="#menu">Menu</a></li>
+									</ul>
+								</nav>
+
+						</div>
+					</header>
+
+				<!-- Menu -->
+					<nav id="menu">
+						<h2>Menu</h2>
+						<ul>
+							<li><a href="index.html">Home</a></li>
+							<li><a href="dataset.html">The Dataset</a></li>
+							<li><a href="analysis.html">Analysis</a></li>
+							<li><a href="reference_chains.html">Reference Chains</a></li>
+							<li><a href="models.html">Models</a></li>
+							<li><a href="team.html">Team</a></li>
+							<li><a href="downloads.html">Downloads</a></li>
+							<!-- <li><a href="elements.html">Elements</a></li>-->
+						</ul>
+					</nav>
+				<!-- Main -->
+					<div id="main">
+						<div class="inner">
+							<h1>The PhotoBook Task and Dataset - Dataset</h1>	
+						<a href="">Dialogue Samples</a><br />
+						<a href="">The PhotoBook Dataset</a><br />
+						<a href="">The Dataset Processor</a>
+						<br />
+						<br />
+
+						<p><b>The PhotoBook Dataset was collected using a dedicated conversation task called the PhotoBook Task</b>. In the PhotoBook task, two participants are paired for an online multi-round image identification game. In this game they are  shown collections of images which resemble the page of a photo book. Each of these collections is a randomly ordered grid of six similar images depicting <b>everyday scenes extracted from the MS COCO Dataset</b>. On each page of the photo book, some of the images are present in the displays of both participants (the <i>common images</i>). The other images are each shown to one of the participants only (the <i>different images</i>). Three of the images in each display are highlighted through a yellow bar under the picture. The participants are tasked to mark these highlighted  target images as either <i>common</i> or <i>different</i> by chatting with their partner. 
+				    </p>
+ <span class="image main"><img src="images/screenshot_game.png" alt="" /></span>
+
+				    <p>
+
+				    	As a result of a carefully designed setup, dialogues in the PhotoBook dataset 
+contain multiple descriptions of each of the target images and thus provide a<b> valuable resource for investigating participant cooperation, and specifically collaborative referring expression generation and resolution</b> with respect to the conversation's common ground.
+</p>
+
+<p>
+	During data collection, we recorded anonymised participant IDs, 
+the author, timestamp and content of all sent messages, label selections and button clicks, plus self-reported collaboration performance scores. 
+<b>The dataset contains a total of 2,506 completed games with 164,615 utterances, 130,322 actions, and spans a vocabulary of 11,805 unique tokens. </b>
+	</p>
+	
+		For a detailed account of the data collection process further analysis and , see our paper 
+		<blockquote>
+		Janosch Haber, Tim Baumgärtner, Ece Takmaz, Lieke Gelderloos, Elia Bruni, and Raquel Fernández. <br />
+		<b>The PhotoBook Dataset: Building Common Ground through Visually Grounded Dialogue.</b><i> <br />
+		In Proceedings of the 57th Annual Meeting of the Association for Computational Linguistics (ACL)</i>, 2019
+	</blockquote>
+	and Janosch Haber's Master's Thesis
+		<blockquote>
+		Janosch Haber.<br />
+		<b>How should we call it? - Introducing the PhotoBook Conversation Task and Dataset <br />for Training Natural Referring Expression Generation in Artificial Dialogue Agents.
+</b><i> <br />
+		Master’s Thesis. University of Amsterdam. Amsterdam, The Netherlands</i>, 2018
+	</blockquote>
+
+<h2>Dialogue Samples</h2>
+
+Through the goal-oriented nature of participants' interactions in the PhotoBook dataset, we do not only collect image descriptions but rather the full, <b>collaborative process of establishing, grounding and refining referring expressions</b> throughout the  subsequent rounds of the PhotoBook task. As a result, we capture a wide range of <b>dialogue acts such as clarification questions, corrections, extensions, (self-)repairs as well as interactions concerning game mechanics</b>. Consider for example the following interactions: <br /><br />
+
+<blockquote>
+<b>A</b>: <i>Man with dog on lap looking at his computer?</i> <br />
+<b>B</b>: <i>I don't have that, but could it be a TV in yours? Mine has a man sitting with his dog watching TV.</i>  <br />
+<b>A</b>: <i>yes, TV - sorry!</i>  <br />
+<b>B</b>: <i>Okay.</i> <br />
+</blockquote>
+<blockquote>
+<b>A</b>: <i>Do you have someone on a big motorcycle and their head isn't visible?</i>  <br />
+<b>A</b>: <i>There is a blue car in the background</i> <br />
+<b>B</b>: <i>No</i> <br />
+<b>A</b>: <i>In any of the pictures?</i> <br />
+<b>B</b>: <i>No</i> <br />
+<b>A</b>: <i>Okay, thank you</i> <br />
+</blockquote>
+<blockquote>
+<b>B</b>: <i>Woman with hot dog</i> <br />
+<b>A</b>: <i>Older girl with glasses holding a hot dog?</i> <br />
+<b>B</b>: <i>sitting</i> <br />
+<b>A</b>: <i>Yeah</i> <br />
+
+</blockquote>
+<blockquote>
+<b>A</b>: <i>Do you have a picture with a lady in a fancy dress standing by a motorcycle?</i> <br />
+<b>B</b>: <i>no</i> <br />
+<b>B</b>: <i>wait</i> <br />
+<b>B</b>: <i>yes, in black?</i> <br />
+<b>A</b>: <i>Yes, it's a black dress with white trim.</i> <br />
+</blockquote>
+<blockquote>
+
+<b>A</b>: <i>Is there anything else?</i> <br />
+<b>B</b>: <i>Do you have the old lady in the white hat/blue pants reading?</i> <br />
+<b>A</b>: <i>Yes, I do.</i> <br />
+<b>B</b>: <i>Okay, that's all for me</i> <br />
+</blockquote>
+
+In most cases, referring expressions agreed upon during the first rounds of a game are further refined and optimised while re-referring to the same target object in later rounds of the game. These <b>refinements often are manifested in an omission of detail while retaining core features of the target object</b>. <br /><br />
+
+<blockquote>
+<b>A</b>: <i>Do you have a boy with a teal coloured shirt with yellow holding a bear with a red shirt?</i> <br />
+<b>B</b>: <i>Yes</i> <br />
+- <br />
+<b>B</b>: <i>Boy with teal shirt and bear with red shirt?</i> <br />
+<b>A</b>: <i>Yes!</i> <br />
+- <br />
+<b>A</b>: <i>Teal shirt boy?</i> <br />
+<b>B</b>: <i>No</i> <br />
+</blockquote>
+
+<b>Collecting all utterances that refer to a specific target image during a given game creates its co-reference chain</b>. Consider the following examples of first and last references from co-reference chains manually extracted from the PhotoBook dataset: <br /><br />
+
+<blockquote>
+<b>F</b>: <i>Two girls near TV playing wii. One in white shirt, one in grey</i><br />
+<b>L</b>: <i>Girls in white and grey</i><br />
+</blockquote>
+
+<blockquote>
+<b>F</b>: <i>A person that looks like a monk sitting on a bench. He's wearing a blue and white ball cap</i><br />
+<b>L</b>: <i>The monk </i><br />
+</blockquote>
+
+<blockquote>
+<b>F</b>: <i>A white, yellow, and blue bus being towed by a blue tow truck</i><br />
+<b>L</b>: <i>Yellow/white bus being towed by blue</i><br />
+</blockquote>
+
+Samples of full participant interactions can be <a href="">viewed here</a>.<br /><br />
+
+<h2>The PhotoBook Dataset</h2>
+
+<b>The PhotoBook Dataset can be downloaded <a href="">here</a></b>.<br /><br /> 
+
+The PhotoBook Dataset contains 2502 complete dialogues collected through the PhotoBook Conversation task. The dataset is anonymized but allows for tracking specific users over multiple games through a unique agent ID. 
+
+<b>The raw PhotoBook Dataset is a collection of JSON files with three levels of data</b>, pertaining either to the <i>Game</i>, one of the five <i>Game Rounds</i> or one of the variable number of <i>Messages</i> in a game round. The data is structured as follows: <br /><br />
+
+<h3>Top level: Game Data</h3>
+
+<div class="table-wrapper">
+	<table class="alt">
+		<thead>
+			<tr>
+				<th>Key</th>
+				<th>Value</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr>
+				<td>"game_id"</td>
+				<td>Unique game ID. Integer ranging from 0 to 2501</td>
+	
+			</tr>
+			<tr>
+				<td>"domain_id"</td>
+				<td>Indicates the image domain of the game. Integer ranging from 0 to 60 </td>
+			
+			</tr>
+			<tr>
+				<td>"agent_ids"</td>
+				<td>Ordered list of the unique agent IDs of the participants; length = 2 </td>
+			
+			</tr>
+			<tr>
+				<td>"agent_labels"</td>
+				<td>Ordered list of the agents’ speaker labels A or B; length = 2 </td>
+				
+			</tr>
+			<tr>
+				<td>"feedback"</td>
+				<td>Dictionary with the participant's feedback at the end of the game. Keys are the speaker labels A and B, values are pre-formated Strings. See their format <a href="">here</a>. Values are <code>null</code> if no feedback was given.</td>
+			
+			</tr>
+			<tr>
+				<td>"rounds"</td>
+				<td>Ordered list of Game Round Data objects; length = 5 </td>
+			
+			</tr>
+		</tbody>
+	</table>
+</div>
+
+<h3>2nd level: Game Round Data</h3>
+
+<div class="table-wrapper">
+	<table class="alt">
+		<thead>
+			<tr>
+				<th>Key</th>
+				<th>Value</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr>
+				<td>"round_nr"</td>
+				<td>Round number indicator. Integer ranging from 1 to 5</td>
+			
+			</tr>
+			<tr>
+				<td>"score"</td>
+				<td>Dictionary of the participant's scores in this round. Keys are the speaker labels A and B, values are their integer points ranging from 0 to 3 </td>
+			
+			</tr>
+			<tr>
+				<td>"images"</td>
+				<td>Dictionary of the images displayed to the participant's in this round. Keys are the speaker labels A and B, values are the image paths relative to the <code>images</code> folder. </td>
+				
+			</tr>
+			<tr>
+				<td>"common"</td>
+				<td>Variable length list of the common images in this game round. Image paths are relative to the <code>images</code> folder.  </td>
+			
+			</tr>
+			<tr>
+				<td>"highlighted"</td>
+				<td>Dictionary indicating whether the images displayed to the participant's were highlighted or not in this round. Keys are the speaker labels A and B, values are booleans indicating wheter the corresponding image was highlighted. </td>
+			
+			</tr>
+			<tr>
+				<td>"messages"</td>
+				<td>Ordered list of Message Data objects; variable length</td>
+			
+			</tr>
+		</tbody>
+	</table>
+</div>
+
+<h3>3rd level: Message Data</h3>
+
+<div class="table-wrapper">
+	<table class="alt">
+		<thead>
+			<tr>
+				<th>Key</th>
+				<th>Value</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tbody>
+			<tr>
+				<td>"timestamp" </td>
+				<td>Message timestamp relative to the conversation start; HH:MM:SS[.ssssss] format</td>
+	
+			</tr>
+			<tr>
+				<td>"turn"</td>
+				<td>Turn indicator with respect to the current game round. A turn contains all subsequent utterances of an agent until the next utterance of the other agent</td>
+			
+			</tr>
+			<tr>
+				<td>"speaker"</td>
+				<td>Speaker label A or B of the current speaker </td>
+			
+			</tr>
+			<tr>
+				<td>"agent_id"</td>
+				<td>Agent ID of the current speaker</td>
+				
+			</tr>
+			<tr>
+				<td>"message"</td>
+				<td>Sent message. String. Game mechanic messages are indicated by an inital keyword in tag brackets. <a href="">See here</a> for a full list of tags.</td>
+			
+			</tr>
+		</tbody>
+		</tbody>
+	</table>
+</div>
+
+
+A <b>sample logfile</b> can be seen <a href="json_example.html" target="_blank">here</a>. <br /><br />
+
+<h2>The Dataset Processor</h2>
+
+To simplify processing, we provide a Python dataset processor that reads in the raw logfiles and creates <code>Log</code> objects that contain the raw logfile data plus some additional fields.
+
+The processor can be included into a Python project by adding <code>from processor import Log</code>and accessed through the code in the following snippet.<br /><br />
+
+<pre><code>def load_logs(log_repository, data_path):
+
+    filepath = os.path.join(data_path, log_repository)
+    print("Loading logs from {}...".format(filepath))
+
+    missing_counter = 0
+    file_count = 0
+    for _, _, files in os.walk(filepath):
+        file_count += len(files)
+    print("{} files found.".format(file_count))
+    logs = []
+    for root, dirs, files in os.walk(filepath):
+        for file in files:
+            if file.endswith(".json"):
+                with open(os.path.join(root, file), 'r') as logfile:
+                    log = Log(json.load(logfile))
+                    if log.complete:
+                        logs.append(log)
+
+    print("DONE. Loaded {} completed game logs.".format(len(logs)))
+    return logs
+
+data_path = ""
+logs = load_logs("logs", data_path)
+</code></pre>
+
+						</div>
+					</div>
+
+				<!-- Footer -->
+					<footer id="footer">
+						<div class="inner">
+							<section>
+								<h2>Contact</h2>
+								<ul class="icons">
+									<li><a href="#" class="icon style2 fa-envelope-o"><span class="label">Email</span></a></li>
+									<li><a href="#" class="icon style2 fa-github"><span class="label">GitHub</span></a></li>	
+								</ul>
+								Raquel Fernández<br />
+     							Science Park 107, office F1.07 <br />
+     							+31 (0)20 525 7009  <br />
+							</section>
+							<section>
+								
+
+							</section>
+							<ul class="copyright">
+								<li>&copy; Dialogue Modeling Group, University of Amsterdaom. All rights reserved</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+							</ul>
+						</div>
+					</footer>
+
+			</div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>

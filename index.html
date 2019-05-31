@@ -1,2 +1,212 @@
-<h1>The PhotoBook Task and Dataset</h1>
-<p>Site under construction.</p>
+<!DOCTYPE HTML>
+<!--
+	Phantom by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>The PhotoBook Task and Dataset</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+	</head>
+	<body class="is-preload">
+		<!-- Wrapper -->
+			<div id="wrapper">
+
+				<!-- Header -->
+					<header id="header">
+						<div class="inner">
+
+							<!-- Logo 
+								<a href="index.html" class="logo">
+									<span class="symbol"><img src="images/logo.svg" alt="" /></span><span class="title">Phantom</span>
+								</a>
+-->
+							<!-- Nav -->
+								<nav>
+									<ul>
+										<li><a href="#menu">Menu</a></li>
+									</ul>
+								</nav>
+
+						</div>
+					</header>
+
+				<!-- Menu -->
+					<nav id="menu">
+						<h2>Menu</h2>
+						<ul>
+							<li><a href="index.html">Home</a></li>
+							<li><a href="dataset.html">The Dataset</a></li>
+							<li><a href="analysis.html">Analysis</a></li>
+							<li><a href="reference_chains.html">Reference Chains</a></li>
+							<li><a href="models.html">Models</a></li>
+							<li><a href="team.html">Team</a></li>
+							<li><a href="downloads.html">Downloads</a></li>
+							<!-- <li><a href="elements.html">Elements</a></li>-->
+						</ul>
+					</nav>
+
+				<!-- Main -->
+					<div id="main">
+						<div class="inner">
+							<header>
+								<h1>The PhotoBook Task and Dataset<br /></h1>
+								<p><b>A large-scale collection of visually-grounded, task-oriented dialogues <br /> 
+								designed to investigate shared dialogue history accumulating during conversation.</b><br />
+								Developed by the <a href="https://staff.fnwi.uva.nl/r.fernandezrovira/dialogue-group.php">Dialogue Modelling Group (DMG)</a> at the University of Amsterdam</p>
+							</header>
+							<section class="tiles">
+								<article class="style1">
+									<span class="image">
+										<img src="images/pic01.jpg" alt="" />
+									</span>
+									<a href="dataset.html">
+										<h2>Dataset</h2>
+										<div class="content">
+											<p>A collection of 2,500 visually-grounded dialogue interactions designed to investigate shared dialogue history.</p>
+										</div>
+									</a>
+								</article>
+								<article class="style2">
+									<span class="image">
+										<img src="images/pic02.jpg" alt="" />
+									</span>
+									<a href="analysis.html">
+										<h2>Analysis</h2>
+										<div class="content">
+											<p>An in-depth analysis of the central phenomena exhibited by the collected data.</p>
+										</div>
+									</a>
+								</article>
+								<article class="style3">
+									<span class="image">
+										<img src="images/pic03.jpg" alt="" />
+									</span>
+									<a href="reference_chains.html">
+										<h2>Reference Chains</h2>
+										<div class="content">
+											<p>A heuristics developed to automatically extract chains of image mentions generated during a conversation.</p>
+										</div>
+									</a>
+								</article>
+								<article class="style4">
+									<span class="image">
+										<img src="images/pic04.jpg" alt="" />
+									</span>
+									<a href="models.html">
+										<h2>Models</h2>
+										<div class="content">
+											<p>A set of baseline models to predict mentioned images based on current utterances and dialogue history.</p>
+										</div>
+									</a>
+								</article>
+								<article class="style5">
+									<span class="image">
+										<img src="images/pic05.jpg" alt="" />
+									</span>
+									<a href="team.html">
+										<h2>Team</h2>
+										<div class="content">
+											<p>The Team behind the PhotoBook Task and Dataset.</p>
+										</div>
+									</a>
+								</article>
+								<article class="style6">
+									<span class="image">
+										<img src="images/pic06.jpg" alt="" />
+									</span>
+									<a href="downloads.html">
+										<h2>Downloads</h2>
+										<div class="content">
+											<p>Download the dataset and other resources.</p>
+										</div>
+									</a>
+								</article>
+							</section>
+						</div>
+						<div class="inner"> 
+							<br />
+							<hr>
+							<br />
+					<h3>About the PhotoBook Task and Dataset</h3>
+					<p>The past few years have seen an immense interest in <b>developing and training computational agents for visually-grounded dialogue</b>, the task of using natural language to communicate about visual input. The models developed for this task often focus on specific aspects such as image labelling, object reference, or question answering, but fail to produce consistent outputs over a conversation.
+					<br />
+					<br />
+					We  believe that this shortcoming is mostly due to a <b>missing representation of the participant's shared common ground</b> which develops and extends during an interaction.
+										
+				To  facilitate  progress  towards  more  consistent and effective conversation,  we introduce the <b>PhotoBook Dataset:  a  large  collection  of  2,500  human-human, visually-grounded and goal-oriented  conversations between   pairs of   participants</b>.</p> 
+
+				   
+
+				    <p><b>The PhotoBook Dataset was collected using a dedicated conversation task called the PhotoBook Task</b>. In the PhotoBook task, two participants are paired for an online multi-round image identification game. In this game they are  shown collections of images which resemble the page of a photo book. Each of these collections is a randomly ordered grid of six similar images depicting everyday scenes extracted from the MS COCO Dataset. On each page of the photo book, some of the images are present in the displays of both participants (the <b>common images</b>). The other images are each shown to one of the participants only (the <b>different images</b>). Three of the images in each display are highlighted through a yellow bar under the picture. The participants are tasked to mark these highlighted  target images as either common or different by chatting with their partner. 
+				    </p>
+ <span class="image main"><img src="images/screenshot_game.png" alt="" /></span>
+
+				    <p>
+
+				    	As a result of a carefully designed setup, dialogues in the PhotoBook dataset 
+contain multiple descriptions of each of the target images and thus provide a<b> valuable resource for investigating participant cooperation, and specifically collaborative referring expression generation and resolution</b> with respect to the conversation's common ground.
+</p>
+
+<p>
+	During data collection, we recorded anonymised participant IDs, 
+the author, timestamp and content of all sent messages, label selections and button clicks, plus self-reported collaboration performance scores. 
+<b>The dataset contains a total of 2,502 completed games with 164,615 utterances, 130,322 actions, and spans a vocabulary of 11,805 unique tokens. </b>
+	</p>
+	
+		For a detailed account, see our paper 
+		<blockquote>
+		Janosch Haber, Tim Baumgärtner, Ece Takmaz, Lieke Gelderloos, Elia Bruni, and Raquel Fernández. <br />
+		<b>The PhotoBook Dataset: Building Common Ground through Visually Grounded Dialogue.</b><i> <br />
+		In Proceedings of the 57th Annual Meeting of the Association for Computational Linguistics (ACL)</i>, 2019
+	</blockquote>
+	and Janosch Haber's Master's Thesis
+		<blockquote>
+		Janosch Haber.<br />
+		<b>How should we call it? - Introducing the PhotoBook Conversation Task and Dataset <br />for Training Natural Referring Expression Generation in Artificial Dialogue Agents.
+</b><i> <br />
+		Master’s Thesis. University of Amsterdam. Amsterdam, The Netherlands</i>, 2018
+	</blockquote>
+
+
+
+</div>
+					</div>
+			<!-- Footer -->
+					<footer id="footer">
+						<div class="inner">
+							<section>
+								<h2>Contact</h2>
+								<ul class="icons">
+									<li><a href="#" class="icon style2 fa-envelope-o"><span class="label">Email</span></a></li>
+									<li><a href="#" class="icon style2 fa-github"><span class="label">GitHub</span></a></li>	
+								</ul>
+								Raquel Fernández<br />
+     							Science Park 107, office F1.07 <br />
+     							+31 (0)20 525 7009  <br />
+							</section>
+							<section>
+								
+
+							</section>
+							<ul class="copyright">
+								<li>&copy; Dialogue Modeling Group, University of Amsterdaom. All rights reserved</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+							</ul>
+						</div>
+					</footer>
+
+			</div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>
