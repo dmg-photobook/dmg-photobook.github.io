@@ -6,7 +6,7 @@
 -->
 <html>
   <head>
-    <title>Dataset - The PhotoBook Task and Dataset</title>
+    <title>The PhotoBook Task and Dataset - Logfile Sample</title>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
     <link rel="stylesheet" href="assets/css/main.css" />
@@ -21,7 +21,9 @@
             <div class="inner">
 
               <!-- Logo -->
-                <a href="index.html">Home</a>
+              <a href="index.html" class="logo">
+                  <span class="symbol"><img src="images/fb_logo.png" alt="" /></span><span class="title">The PhotoBook Task and Dataset</span>
+                </a>
                 
 
               <!-- Nav -->
@@ -51,21 +53,22 @@
         <!-- Main -->
           <div id="main">
             <div class="inner">
-              <h1>The PhotoBook Task and Dataset - Dataset</h1> 
-<pre><code>{
-  "game_id": 62,
-  "domain_id": 0,
+              <h1>Transcript Logfile Sample</h1>  
+<pre><code>{{
+  "game_id": 91,
+  "domain_id": 20,
   "agent_ids": [
-    119,
-    120
+    914,
+    763
   ],
   "agent_labels": [
     "A",
     "B"
   ],
+  "start_time": "2018-04-15T08:11:12.461813",
   "feedback": {
-    "B": "col:5<&>partner_u:5<&>self_u:5<&>text:no",
-    "A": "col:5<&>partner_u:5<&>self_u:5<&>text:Thiswasawesome!"
+    "B": "col:5<&>partner_u:5<&>self_u:5<&>text:",
+    "A": "col:5<&>partner_u:5<&>self_u:5<&>text:Thankyou"
   },
   "rounds": [
     {
@@ -76,41 +79,43 @@
       },
       "images": {
         "A": [
-          "person_bicycle/COCO_train2014_000000495580.jpg",
-          "person_bicycle/COCO_train2014_000000098596.jpg",
-          "person_bicycle/COCO_train2014_000000293658.jpg",
-          "person_bicycle/COCO_train2014_000000441488.jpg",
-          "person_bicycle/COCO_train2014_000000266311.jpg",
-          "person_bicycle/COCO_train2014_000000256981.jpg"
+          "person_suitcase/COCO_train2014_000000553308.jpg",
+          "person_suitcase/COCO_train2014_000000160471.jpg",
+          "person_suitcase/COCO_train2014_000000538682.jpg",
+          "person_suitcase/COCO_train2014_000000206968.jpg",
+          "person_suitcase/COCO_train2014_000000187582.jpg",
+          "person_suitcase/COCO_train2014_000000200221.jpg"
         ],
         "B": [
-          "person_bicycle/COCO_train2014_000000386722.jpg",
-          "person_bicycle/COCO_train2014_000000326202.jpg",
-          "person_bicycle/COCO_train2014_000000527112.jpg",
-          "person_bicycle/COCO_train2014_000000441488.jpg",
-          "person_bicycle/COCO_train2014_000000098596.jpg",
-          "person_bicycle/COCO_train2014_000000386326.jpg"
+          "person_suitcase/COCO_train2014_000000187582.jpg",
+          "person_suitcase/COCO_train2014_000000184319.jpg",
+          "person_suitcase/COCO_train2014_000000538682.jpg",
+          "person_suitcase/COCO_train2014_000000200221.jpg",
+          "person_suitcase/COCO_train2014_000000037327.jpg",
+          "person_suitcase/COCO_train2014_000000553308.jpg"
         ]
       },
       "common": [
-        "person_bicycle/COCO_train2014_000000098596.jpg",
-        "person_bicycle/COCO_train2014_000000441488.jpg"
+        "person_suitcase/COCO_train2014_000000538682.jpg",
+        "person_suitcase/COCO_train2014_000000187582.jpg",
+        "person_suitcase/COCO_train2014_000000553308.jpg",
+        "person_suitcase/COCO_train2014_000000200221.jpg"
       ],
       "highlighted": {
         "A": [
-          false,
-          false,
           true,
           false,
           true,
-          true
+          true,
+          false,
+          false
         ],
         "B": [
           false,
           false,
           true,
-          true,
           false,
+          true,
           true
         ]
       },
@@ -119,266 +124,168 @@
           "timestamp": "00:00:00",
           "turn": 0,
           "speaker": "A",
-          "agent_id": 119,
-          "message": "Alright here we go.."
+          "agent_id": 914,
+          "message": "do you have someone in jeans standing on a skateboard"
         },
         {
-          "timestamp": "00:00:30.581932",
+          "timestamp": "00:00:04.944757",
           "turn": 1,
-          "speaker": "A",
-          "agent_id": 119,
-          "message": "First highlighted picture, I have a man on a bicycle, with red or pink shoes, with a garage"
-        },
-        {
-          "timestamp": "00:00:42.992439",
-          "turn": 2,
-          "speaker": "A",
-          "agent_id": 119,
-          "message": "in the background with light green doors, and a blue car in the background"
-        },
-        {
-          "timestamp": "00:01:14.315309",
-          "turn": 3,
           "speaker": "B",
-          "agent_id": 120,
-          "message": "I don't have this one"
+          "agent_id": 763,
+          "message": "Do you have a person wearing blue jeans standing on top of a green skateboard?"
         },
         {
-          "timestamp": "00:01:19.221762",
-          "turn": 4,
+          "timestamp": "00:00:08.940782",
+          "turn": 2,
+          "speaker": "B",
+          "agent_id": 763,
+          "message": "Yes"
+        },
+        {
+          "timestamp": "00:00:12.787133",
+          "turn": 3,
           "speaker": "A",
-          "agent_id": 119,
-          "message": "<selection> <dif> person_bicycle/COCO_train2014_000000293658.jpg"
+          "agent_id": 914,
+          "message": "<selection> <com> person_suitcase/COCO_train2014_000000538682.jpg"
         },
         {
-          "timestamp": "00:01:23.512676",
-          "turn": 4,
+          "timestamp": "00:00:35.498394",
+          "turn": 3,
           "speaker": "A",
-          "agent_id": 119,
-          "message": "Okay, your turn"
+          "agent_id": 914,
+          "message": "do you have a man laying next to a black suitcase"
         },
         {
-          "timestamp": "00:01:50.841915",
+          "timestamp": "00:01:08.201070",
+          "turn": 4,
+          "speaker": "B",
+          "agent_id": 763,
+          "message": "No, but I have a man wearing red going through an open suitcase."
+        },
+        {
+          "timestamp": "00:01:13.472378",
           "turn": 5,
           "speaker": "B",
-          "agent_id": 120,
-          "message": "I have one with a man in sky blue shirt and black short handling blue gas tank on a bicycle"
+          "agent_id": 763,
+          "message": "Do you have a person going into a briefcase over a red tinted light."
         },
         {
-          "timestamp": "00:02:08.141545",
+          "timestamp": "00:01:22.468280",
           "turn": 6,
           "speaker": "A",
-          "agent_id": 119,
-          "message": "I don't have that one"
+          "agent_id": 914,
+          "message": "<selection> <com> person_suitcase/COCO_train2014_000000553308.jpg"
         },
         {
-          "timestamp": "00:02:08.507238",
+          "timestamp": "00:01:25.545474",
+          "turn": 6,
+          "speaker": "A",
+          "agent_id": 914,
+          "message": "yes"
+        },
+        {
+          "timestamp": "00:01:30.005677",
           "turn": 7,
           "speaker": "B",
-          "agent_id": 120,
-          "message": "There is a bus in the background"
+          "agent_id": 763,
+          "message": "<selection> <com> person_suitcase/COCO_train2014_000000538682.jpg"
         },
         {
-          "timestamp": "00:02:16.409142",
+          "timestamp": "00:01:31.112176",
+          "turn": 7,
+          "speaker": "B",
+          "agent_id": 763,
+          "message": "<selection> <com> person_suitcase/COCO_train2014_000000553308.jpg"
+        },
+        {
+          "timestamp": "00:01:54.453028",
+          "turn": 7,
+          "speaker": "B",
+          "agent_id": 763,
+          "message": "Do you have a person wearing blue top and black pants standing next to a green suitcase?"
+        },
+        {
+          "timestamp": "00:02:33.228708",
           "turn": 8,
-          "speaker": "B",
-          "agent_id": 120,
-          "message": "Got it"
-        },
-        {
-          "timestamp": "00:02:24.273102",
-          "turn": 9,
-          "speaker": "B",
-          "agent_id": 120,
-          "message": "<selection> <dif> person_bicycle/COCO_train2014_000000386326.jpg"
-        },
-        {
-          "timestamp": "00:02:50.668627",
-          "turn": 9,
           "speaker": "A",
-          "agent_id": 119,
-          "message": "Okay, I have a man with a few bikes on the right, and he's doing a handstand on the beach "
+          "agent_id": 914,
+          "message": "no but do you have someone holding a brown suitcase, with a red while...wearing all black"
         },
         {
-          "timestamp": "00:03:19.336696",
+          "timestamp": "00:02:37.739446",
+          "turn": 9,
+          "speaker": "B",
+          "agent_id": 763,
+          "message": "<selection> <dif> person_suitcase/COCO_train2014_000000037327.jpg"
+        },
+        {
+          "timestamp": "00:03:03.512510",
+          "turn": 9,
+          "speaker": "B",
+          "agent_id": 763,
+          "message": "No"
+        },
+        {
+          "timestamp": "00:03:06.333956",
           "turn": 10,
           "speaker": "B",
-          "agent_id": 120,
-          "message": "Don't see that one"
+          "agent_id": 763,
+          "message": "<feedback>"
         },
         {
-          "timestamp": "00:03:22.942960",
+          "timestamp": "00:03:19.618924",
+          "turn": 10,
+          "speaker": "A",
+          "agent_id": 914,
+          "message": "thats my last pick in yellow"
+        },
+        {
+          "timestamp": "00:03:23.010328",
           "turn": 11,
           "speaker": "A",
-          "agent_id": 119,
-          "message": "<selection> <dif> person_bicycle/COCO_train2014_000000266311.jpg"
+          "agent_id": 914,
+          "message": "pic"
         },
         {
-          "timestamp": "00:03:46.045812",
-          "turn": 11,
-          "speaker": "B",
-          "agent_id": 120,
-          "message": "I have one with a man holding a phone trying to take a picture, he is squatting between two bikes "
-        },
-        {
-          "timestamp": "00:03:57.710099",
+          "timestamp": "00:03:42.093003",
           "turn": 12,
-          "speaker": "A",
-          "agent_id": 119,
-          "message": "I have that one"
-        },
-        {
-          "timestamp": "00:04:01.842072",
-          "turn": 13,
           "speaker": "B",
-          "agent_id": 120,
-          "message": "<selection> <com> person_bicycle/COCO_train2014_000000441488.jpg"
+          "agent_id": 763,
+          "message": "Anything else?"
         },
         {
-          "timestamp": "00:04:09.781098",
+          "timestamp": "00:03:47.196812",
           "turn": 13,
           "speaker": "A",
-          "agent_id": 119,
-          "message": "phone is white, and one hand on the bottom, and one hand on top?"
+          "agent_id": 914,
+          "message": "nope"
         },
         {
-          "timestamp": "00:04:18.991471",
+          "timestamp": "00:03:52.168346",
           "turn": 14,
           "speaker": "A",
-          "agent_id": 119,
-          "message": "Ocean in the background?"
+          "agent_id": 914,
+          "message": "<selection> <dif> person_suitcase/COCO_train2014_000000206968.jpg"
         },
         {
-          "timestamp": "00:04:20.465232",
-          "turn": 15,
-          "speaker": "B",
-          "agent_id": 120,
-          "message": "Yes! that's the one"
-        },
-        {
-          "timestamp": "00:04:21.901733",
-          "turn": 16,
+          "timestamp": "00:03:53.026964",
+          "turn": 14,
           "speaker": "A",
-          "agent_id": 119,
-          "message": "I have that"
-        },
-        {
-          "timestamp": "00:04:23.944316",
-          "turn": 17,
-          "speaker": "A",
-          "agent_id": 119,
-          "message": "yep"
-        },
-        {
-          "timestamp": "00:04:30.649312",
-          "turn": 18,
-          "speaker": "B",
-          "agent_id": 120,
-          "message": "Great! next?"
-        },
-        {
-          "timestamp": "00:04:45.139740",
-          "turn": 19,
-          "speaker": "A",
-          "agent_id": 119,
-          "message": "Okay, my last one is a man loading a bike onto the front of a city bus"
-        },
-        {
-          "timestamp": "00:04:53.461717",
-          "turn": 20,
-          "speaker": "A",
-          "agent_id": 119,
-          "message": "He's wearing an orange shirt."
-        },
-        {
-          "timestamp": "00:05:12.943391",
-          "turn": 21,
-          "speaker": "B",
-          "agent_id": 120,
-          "message": "Hmmm I don't have that one"
-        },
-        {
-          "timestamp": "00:05:17.651457",
-          "turn": 22,
-          "speaker": "A",
-          "agent_id": 119,
-          "message": "The license plate number is OF 3547"
-        },
-        {
-          "timestamp": "00:05:20.393139",
-          "turn": 23,
-          "speaker": "A",
-          "agent_id": 119,
-          "message": "okay!"
-        },
-        {
-          "timestamp": "00:05:23.583683",
-          "turn": 24,
-          "speaker": "A",
-          "agent_id": 119,
-          "message": "Is that it?"
-        },
-        {
-          "timestamp": "00:05:25.668522",
-          "turn": 25,
-          "speaker": "A",
-          "agent_id": 119,
-          "message": "<selection> <dif> person_bicycle/COCO_train2014_000000256981.jpg"
-        },
-        {
-          "timestamp": "00:05:39.808247",
-          "turn": 25,
-          "speaker": "B",
-          "agent_id": 120,
-          "message": "My last one is a man with red helmet riding on a bike with red gloves"
-        },
-        {
-          "timestamp": "00:05:50.577863",
-          "turn": 26,
-          "speaker": "A",
-          "agent_id": 119,
-          "message": "I don't have that one"
-        },
-        {
-          "timestamp": "00:05:59.781329",
-          "turn": 27,
-          "speaker": "B",
-          "agent_id": 120,
-          "message": "<selection> <dif> person_bicycle/COCO_train2014_000000527112.jpg"
-        },
-        {
-          "timestamp": "00:06:08.950134",
-          "turn": 27,
-          "speaker": "B",
-          "agent_id": 120,
-          "message": "Ok! i think that's it"
-        },
-        {
-          "timestamp": "00:06:10.790517",
-          "turn": 28,
-          "speaker": "A",
-          "agent_id": 119,
+          "agent_id": 914,
           "message": "<feedback>"
         },
         {
-          "timestamp": "00:06:16.208870",
-          "turn": 28,
+          "timestamp": "00:03:56.010194",
+          "turn": 14,
           "speaker": "B",
-          "agent_id": 120,
-          "message": "<feedback>"
-        },
-        {
-          "timestamp": "00:06:20.091059",
-          "turn": 28,
-          "speaker": "A",
-          "agent_id": 119,
+          "agent_id": 763,
           "message": "<next_round>"
         },
         {
-          "timestamp": "00:06:23.690132",
-          "turn": 29,
-          "speaker": "B",
-          "agent_id": 120,
+          "timestamp": "00:04:02.888074",
+          "turn": 15,
+          "speaker": "A",
+          "agent_id": 914,
           "message": "<next_round>"
         }
       ]
@@ -391,262 +298,205 @@
       },
       "images": {
         "A": [
-          "person_bicycle/COCO_train2014_000000386722.jpg",
-          "person_bicycle/COCO_train2014_000000266311.jpg",
-          "person_bicycle/COCO_train2014_000000034815.jpg",
-          "person_bicycle/COCO_train2014_000000326202.jpg",
-          "person_bicycle/COCO_train2014_000000086189.jpg",
-          "person_bicycle/COCO_train2014_000000441488.jpg"
+          "person_suitcase/COCO_train2014_000000187582.jpg",
+          "person_suitcase/COCO_train2014_000000257858.jpg",
+          "person_suitcase/COCO_train2014_000000113123.jpg",
+          "person_suitcase/COCO_train2014_000000037327.jpg",
+          "person_suitcase/COCO_train2014_000000200221.jpg",
+          "person_suitcase/COCO_train2014_000000086922.jpg"
         ],
         "B": [
-          "person_bicycle/COCO_train2014_000000386722.jpg",
-          "person_bicycle/COCO_train2014_000000034815.jpg",
-          "person_bicycle/COCO_train2014_000000256981.jpg",
-          "person_bicycle/COCO_train2014_000000527112.jpg",
-          "person_bicycle/COCO_train2014_000000441488.jpg",
-          "person_bicycle/COCO_train2014_000000086189.jpg"
+          "person_suitcase/COCO_train2014_000000538682.jpg",
+          "person_suitcase/COCO_train2014_000000187582.jpg",
+          "person_suitcase/COCO_train2014_000000160471.jpg",
+          "person_suitcase/COCO_train2014_000000257858.jpg",
+          "person_suitcase/COCO_train2014_000000037327.jpg",
+          "person_suitcase/COCO_train2014_000000553308.jpg"
         ]
       },
       "common": [
-        "person_bicycle/COCO_train2014_000000386722.jpg",
-        "person_bicycle/COCO_train2014_000000441488.jpg",
-        "person_bicycle/COCO_train2014_000000086189.jpg",
-        "person_bicycle/COCO_train2014_000000034815.jpg"
+        "person_suitcase/COCO_train2014_000000037327.jpg",
+        "person_suitcase/COCO_train2014_000000187582.jpg",
+        "person_suitcase/COCO_train2014_000000257858.jpg"
       ],
       "highlighted": {
         "A": [
           false,
+          false,
           true,
           true,
           false,
-          true,
-          false
+          true
         ],
         "B": [
-          false,
-          true,
           true,
           false,
           false,
+          false,
+          true,
           true
         ]
       },
       "messages": [
         {
-          "timestamp": "00:06:55.686030",
+          "timestamp": "00:04:03.487723",
           "turn": 0,
-          "speaker": "A",
-          "agent_id": 119,
-          "message": "Okay, next page...I have the same man doing a handstand like I described on the last page."
+          "speaker": "B",
+          "agent_id": 763,
+          "message": "Okay, next page."
         },
         {
-          "timestamp": "00:07:18.088610",
+          "timestamp": "00:04:16.388618",
           "turn": 1,
           "speaker": "B",
-          "agent_id": 120,
-          "message": "Still don't have that"
+          "agent_id": 763,
+          "message": "Do you have the man standing on top of a green skateboard?"
         },
         {
-          "timestamp": "00:07:20.580287",
+          "timestamp": "00:04:31.990838",
           "turn": 2,
           "speaker": "A",
-          "agent_id": 119,
-          "message": "<selection> <dif> person_bicycle/COCO_train2014_000000266311.jpg"
+          "agent_id": 914,
+          "message": "no but do you have one with a bright green suitcase"
         },
         {
-          "timestamp": "00:07:21.521944",
-          "turn": 2,
-          "speaker": "B",
-          "agent_id": 120,
-          "message": "I have the picture of man in orange shirt trying to load bike to the bus"
-        },
-        {
-          "timestamp": "00:07:31.071414",
+          "timestamp": "00:04:36.302662",
           "turn": 3,
-          "speaker": "A",
-          "agent_id": 119,
-          "message": "I don't have that one"
-        },
-        {
-          "timestamp": "00:07:35.867928",
-          "turn": 4,
           "speaker": "B",
-          "agent_id": 120,
-          "message": "<selection> <dif> person_bicycle/COCO_train2014_000000256981.jpg"
+          "agent_id": 763,
+          "message": "<selection> <dif> person_suitcase/COCO_train2014_000000538682.jpg"
         },
         {
-          "timestamp": "00:07:46.865786",
+          "timestamp": "00:05:02.737423",
+          "turn": 3,
+          "speaker": "B",
+          "agent_id": 763,
+          "message": "I have a person wearing blue and black standing next to an olive green suitcase, is it that one?"
+        },
+        {
+          "timestamp": "00:05:11.155641",
           "turn": 4,
           "speaker": "A",
-          "agent_id": 119,
-          "message": "I have two people, a man on the left and a woman on the right, walking their bikes in front of a "
+          "agent_id": 914,
+          "message": "<selection> <com> person_suitcase/COCO_train2014_000000037327.jpg"
         },
         {
-          "timestamp": "00:07:48.626718",
+          "timestamp": "00:05:21.006804",
+          "turn": 4,
+          "speaker": "A",
+          "agent_id": 914,
+          "message": "yes i have that one to"
+        },
+        {
+          "timestamp": "00:05:26.496353",
           "turn": 5,
-          "speaker": "A",
-          "agent_id": 119,
-          "message": "train"
-        },
-        {
-          "timestamp": "00:08:01.450265",
-          "turn": 6,
           "speaker": "B",
-          "agent_id": 120,
-          "message": "woman is in white jacket?"
+          "agent_id": 763,
+          "message": "<selection> <com> person_suitcase/COCO_train2014_000000037327.jpg"
         },
         {
-          "timestamp": "00:08:05.460665",
+          "timestamp": "00:05:37.754307",
+          "turn": 5,
+          "speaker": "B",
+          "agent_id": 763,
+          "message": "I don't have one with a bright green suitcase though."
+        },
+        {
+          "timestamp": "00:05:38.820957",
+          "turn": 6,
+          "speaker": "A",
+          "agent_id": 914,
+          "message": "do you have one with a little blonde girl combing her hair"
+        },
+        {
+          "timestamp": "00:05:44.932144",
           "turn": 7,
           "speaker": "A",
-          "agent_id": 119,
-          "message": "Yep"
+          "agent_id": 914,
+          "message": "<selection> <dif> person_suitcase/COCO_train2014_000000113123.jpg"
         },
         {
-          "timestamp": "00:08:07.797799",
-          "turn": 8,
-          "speaker": "A",
-          "agent_id": 119,
-          "message": "<selection> <com> person_bicycle/COCO_train2014_000000034815.jpg"
+          "timestamp": "00:05:54.328562",
+          "turn": 7,
+          "speaker": "B",
+          "agent_id": 763,
+          "message": "Do you have a person going through an open suitcase and the background is all red?"
         },
         {
-          "timestamp": "00:08:10.296983",
+          "timestamp": "00:06:04.554132",
           "turn": 8,
           "speaker": "B",
-          "agent_id": 120,
-          "message": "I have this one"
+          "agent_id": 763,
+          "message": "^^ red tinted"
         },
         {
-          "timestamp": "00:08:12.640808",
-          "turn": 9,
-          "speaker": "B",
-          "agent_id": 120,
-          "message": "<selection> <com> person_bicycle/COCO_train2014_000000034815.jpg"
-        },
-        {
-          "timestamp": "00:08:18.050591",
+          "timestamp": "00:06:04.717295",
           "turn": 9,
           "speaker": "A",
-          "agent_id": 119,
-          "message": "Awesome."
+          "agent_id": 914,
+          "message": "no"
         },
         {
-          "timestamp": "00:08:44.509383",
+          "timestamp": "00:06:08.485628",
           "turn": 10,
-          "speaker": "B",
-          "agent_id": 120,
-          "message": "I have another one with a girl riding a bike with pink dress"
-        },
-        {
-          "timestamp": "00:08:52.432232",
-          "turn": 11,
           "speaker": "A",
-          "agent_id": 119,
-          "message": "I think I have that"
+          "agent_id": 914,
+          "message": "no"
         },
         {
-          "timestamp": "00:08:55.944864",
+          "timestamp": "00:06:09.507109",
+          "turn": 11,
+          "speaker": "B",
+          "agent_id": 763,
+          "message": "<selection> <dif> person_suitcase/COCO_train2014_000000553308.jpg"
+        },
+        {
+          "timestamp": "00:06:21.421217",
+          "turn": 11,
+          "speaker": "B",
+          "agent_id": 763,
+          "message": "About the blonde girl... no"
+        },
+        {
+          "timestamp": "00:06:26.458356",
           "turn": 12,
           "speaker": "A",
-          "agent_id": 119,
-          "message": "Bikini top?"
+          "agent_id": 914,
+          "message": "<selection> <dif> person_suitcase/COCO_train2014_000000086922.jpg"
         },
         {
-          "timestamp": "00:09:00.644840",
+          "timestamp": "00:06:31.369800",
+          "turn": 12,
+          "speaker": "B",
+          "agent_id": 763,
+          "message": "<feedback>"
+        },
+        {
+          "timestamp": "00:06:33.787054",
+          "turn": 12,
+          "speaker": "A",
+          "agent_id": 914,
+          "message": "k...next pg"
+        },
+        {
+          "timestamp": "00:06:35.506022",
+          "turn": 13,
+          "speaker": "A",
+          "agent_id": 914,
+          "message": "<feedback>"
+        },
+        {
+          "timestamp": "00:06:38.530063",
           "turn": 13,
           "speaker": "B",
-          "agent_id": 120,
-          "message": "yes!"
-        },
-        {
-          "timestamp": "00:09:03.346075",
-          "turn": 14,
-          "speaker": "B",
-          "agent_id": 120,
-          "message": "<selection> <com> person_bicycle/COCO_train2014_000000086189.jpg"
-        },
-        {
-          "timestamp": "00:09:04.980016",
-          "turn": 14,
-          "speaker": "A",
-          "agent_id": 119,
-          "message": "<selection> <com> person_bicycle/COCO_train2014_000000086189.jpg"
-        },
-        {
-          "timestamp": "00:09:11.722147",
-          "turn": 14,
-          "speaker": "A",
-          "agent_id": 119,
-          "message": "but it's more like a skirt thing, right?"
-        },
-        {
-          "timestamp": "00:09:17.578612",
-          "turn": 15,
-          "speaker": "A",
-          "agent_id": 119,
-          "message": "orange and white bike?"
-        },
-        {
-          "timestamp": "00:09:27.472843",
-          "turn": 16,
-          "speaker": "B",
-          "agent_id": 120,
-          "message": "Yes orange and white"
-        },
-        {
-          "timestamp": "00:09:28.654984",
-          "turn": 17,
-          "speaker": "A",
-          "agent_id": 119,
-          "message": "and can't see her face"
-        },
-        {
-          "timestamp": "00:09:32.454945",
-          "turn": 18,
-          "speaker": "A",
-          "agent_id": 119,
-          "message": "okay yep, that's it."
-        },
-        {
-          "timestamp": "00:09:41.040801",
-          "turn": 19,
-          "speaker": "A",
-          "agent_id": 119,
-          "message": "Done with this one?"
-        },
-        {
-          "timestamp": "00:09:45.535144",
-          "turn": 20,
-          "speaker": "B",
-          "agent_id": 120,
-          "message": "I think so"
-        },
-        {
-          "timestamp": "00:09:46.843672",
-          "turn": 21,
-          "speaker": "B",
-          "agent_id": 120,
-          "message": "<feedback>"
-        },
-        {
-          "timestamp": "00:09:48.158253",
-          "turn": 21,
-          "speaker": "A",
-          "agent_id": 119,
-          "message": "<feedback>"
-        },
-        {
-          "timestamp": "00:09:53.899286",
-          "turn": 21,
-          "speaker": "A",
-          "agent_id": 119,
+          "agent_id": 763,
           "message": "<next_round>"
         },
         {
-          "timestamp": "00:09:58.211894",
-          "turn": 22,
-          "speaker": "B",
-          "agent_id": 120,
+          "timestamp": "00:06:39.881473",
+          "turn": 14,
+          "speaker": "A",
+          "agent_id": 914,
           "message": "<next_round>"
         }
       ]
@@ -659,227 +509,248 @@
       },
       "images": {
         "A": [
-          "person_bicycle/COCO_train2014_000000098596.jpg",
-          "person_bicycle/COCO_train2014_000000326202.jpg",
-          "person_bicycle/COCO_train2014_000000386326.jpg",
-          "person_bicycle/COCO_train2014_000000034815.jpg",
-          "person_bicycle/COCO_train2014_000000256981.jpg",
-          "person_bicycle/COCO_train2014_000000086189.jpg"
+          "person_suitcase/COCO_train2014_000000113123.jpg",
+          "person_suitcase/COCO_train2014_000000037327.jpg",
+          "person_suitcase/COCO_train2014_000000184319.jpg",
+          "person_suitcase/COCO_train2014_000000206968.jpg",
+          "person_suitcase/COCO_train2014_000000257858.jpg",
+          "person_suitcase/COCO_train2014_000000086922.jpg"
         ],
         "B": [
-          "person_bicycle/COCO_train2014_000000386326.jpg",
-          "person_bicycle/COCO_train2014_000000034815.jpg",
-          "person_bicycle/COCO_train2014_000000326202.jpg",
-          "person_bicycle/COCO_train2014_000000386722.jpg",
-          "person_bicycle/COCO_train2014_000000256981.jpg",
-          "person_bicycle/COCO_train2014_000000293658.jpg"
+          "person_suitcase/COCO_train2014_000000160471.jpg",
+          "person_suitcase/COCO_train2014_000000175391.jpg",
+          "person_suitcase/COCO_train2014_000000257858.jpg",
+          "person_suitcase/COCO_train2014_000000113123.jpg",
+          "person_suitcase/COCO_train2014_000000206968.jpg",
+          "person_suitcase/COCO_train2014_000000086922.jpg"
         ]
       },
       "common": [
-        "person_bicycle/COCO_train2014_000000326202.jpg",
-        "person_bicycle/COCO_train2014_000000256981.jpg",
-        "person_bicycle/COCO_train2014_000000386326.jpg",
-        "person_bicycle/COCO_train2014_000000034815.jpg"
+        "person_suitcase/COCO_train2014_000000086922.jpg",
+        "person_suitcase/COCO_train2014_000000257858.jpg",
+        "person_suitcase/COCO_train2014_000000206968.jpg",
+        "person_suitcase/COCO_train2014_000000113123.jpg"
       ],
       "highlighted": {
         "A": [
-          false,
-          false,
-          false,
           true,
           true,
-          true
+          false,
+          true,
+          false,
+          false
         ],
         "B": [
           false,
+          false,
+          false,
           true,
-          false,
-          false,
           true,
           true
         ]
       },
       "messages": [
         {
-          "timestamp": "00:10:14.016698",
+          "timestamp": "00:06:51.755981",
           "turn": 0,
           "speaker": "A",
-          "agent_id": 119,
-          "message": "Okay...I have the girl with the pink shirt and bikini top again."
+          "agent_id": 914,
+          "message": "bright green suitcase again"
         },
         {
-          "timestamp": "00:10:18.321214",
+          "timestamp": "00:07:00.786338",
           "turn": 1,
-          "speaker": "A",
-          "agent_id": 119,
-          "message": "skirt*"
+          "speaker": "B",
+          "agent_id": 763,
+          "message": "Yes I have that one!"
         },
         {
-          "timestamp": "00:10:24.532508",
+          "timestamp": "00:07:04.258900",
           "turn": 2,
           "speaker": "B",
-          "agent_id": 120,
-          "message": "don't have that one"
+          "agent_id": 763,
+          "message": "Do you have the blonde girl combing her hair?"
         },
         {
-          "timestamp": "00:10:27.354849",
-          "turn": 3,
-          "speaker": "A",
-          "agent_id": 119,
-          "message": "<selection> <dif> person_bicycle/COCO_train2014_000000086189.jpg"
-        },
-        {
-          "timestamp": "00:10:38.158543",
+          "timestamp": "00:07:05.895950",
           "turn": 3,
           "speaker": "B",
-          "agent_id": 120,
-          "message": "i have the same man in orange loading bike to bus"
+          "agent_id": 763,
+          "message": "<selection> <com> person_suitcase/COCO_train2014_000000113123.jpg"
         },
         {
-          "timestamp": "00:10:44.841771",
+          "timestamp": "00:07:06.956683",
+          "turn": 3,
+          "speaker": "A",
+          "agent_id": 914,
+          "message": "<selection> <com> person_suitcase/COCO_train2014_000000113123.jpg"
+        },
+        {
+          "timestamp": "00:07:10.932555",
+          "turn": 3,
+          "speaker": "A",
+          "agent_id": 914,
+          "message": "yes"
+        },
+        {
+          "timestamp": "00:07:14.382812",
+          "turn": 4,
+          "speaker": "B",
+          "agent_id": 763,
+          "message": "<selection> <com> person_suitcase/COCO_train2014_000000086922.jpg"
+        },
+        {
+          "timestamp": "00:07:18.274319",
           "turn": 4,
           "speaker": "A",
-          "agent_id": 119,
-          "message": "I do too!"
+          "agent_id": 914,
+          "message": "i mean sry no"
         },
         {
-          "timestamp": "00:10:46.810584",
+          "timestamp": "00:07:23.505213",
+          "turn": 5,
+          "speaker": "B",
+          "agent_id": 763,
+          "message": "<selection> <dif> person_suitcase/COCO_train2014_000000086922.jpg"
+        },
+        {
+          "timestamp": "00:07:28.531920",
           "turn": 5,
           "speaker": "A",
-          "agent_id": 119,
-          "message": "<selection> <com> person_bicycle/COCO_train2014_000000256981.jpg"
+          "agent_id": 914,
+          "message": "No I dont have that one in yellow"
         },
         {
-          "timestamp": "00:10:48.410819",
-          "turn": 5,
-          "speaker": "B",
-          "agent_id": 120,
-          "message": "<selection> <com> person_bicycle/COCO_train2014_000000256981.jpg"
-        },
-        {
-          "timestamp": "00:10:52.388628",
-          "turn": 5,
-          "speaker": "B",
-          "agent_id": 120,
-          "message": "Cool!"
-        },
-        {
-          "timestamp": "00:10:58.075239",
+          "timestamp": "00:07:39.317263",
           "turn": 6,
           "speaker": "A",
-          "agent_id": 119,
-          "message": "I have the same photo of the two in front of the train"
+          "agent_id": 914,
+          "message": "I have the olive green suitcase again"
         },
         {
-          "timestamp": "00:11:04.667607",
+          "timestamp": "00:07:52.840690",
           "turn": 7,
-          "speaker": "A",
-          "agent_id": 119,
-          "message": "White jacket on the woman."
+          "speaker": "B",
+          "agent_id": 763,
+          "message": "It doesn't matter if it's yellow, it just matters if it's on you screen for this page."
         },
         {
-          "timestamp": "00:11:09.423537",
+          "timestamp": "00:08:11.506076",
           "turn": 8,
-          "speaker": "B",
-          "agent_id": 120,
-          "message": "i have that one too"
-        },
-        {
-          "timestamp": "00:11:11.593094",
-          "turn": 9,
-          "speaker": "B",
-          "agent_id": 120,
-          "message": "<selection> <com> person_bicycle/COCO_train2014_000000034815.jpg"
-        },
-        {
-          "timestamp": "00:11:12.886805",
-          "turn": 9,
           "speaker": "A",
-          "agent_id": 119,
-          "message": "<selection> <com> person_bicycle/COCO_train2014_000000034815.jpg"
+          "agent_id": 914,
+          "message": "k"
         },
         {
-          "timestamp": "00:11:29.012715",
+          "timestamp": "00:08:14.917823",
           "turn": 9,
-          "speaker": "A",
-          "agent_id": 119,
-          "message": "What else do you have?"
+          "speaker": "B",
+          "agent_id": 763,
+          "message": "I don't have the olive green suitcase."
         },
         {
-          "timestamp": "00:12:00.425468",
+          "timestamp": "00:08:17.419705",
           "turn": 10,
-          "speaker": "B",
-          "agent_id": 120,
-          "message": "i have a man with white shirt riding a bike with pizza in front"
+          "speaker": "A",
+          "agent_id": 914,
+          "message": "well yeah then"
         },
         {
-          "timestamp": "00:12:10.924424",
+          "timestamp": "00:08:20.011973",
           "turn": 11,
-          "speaker": "B",
-          "agent_id": 120,
-          "message": "and trying to get over some wood wedge"
+          "speaker": "A",
+          "agent_id": 914,
+          "message": "k"
         },
         {
-          "timestamp": "00:12:23.085639",
+          "timestamp": "00:08:23.540345",
           "turn": 12,
           "speaker": "A",
-          "agent_id": 119,
-          "message": "I don't have that one"
+          "agent_id": 914,
+          "message": "<selection> <dif> person_suitcase/COCO_train2014_000000037327.jpg"
         },
         {
-          "timestamp": "00:12:37.530526",
-          "turn": 13,
+          "timestamp": "00:08:31.070224",
+          "turn": 12,
           "speaker": "B",
-          "agent_id": 120,
-          "message": "<selection> <dif> person_bicycle/COCO_train2014_000000293658.jpg"
+          "agent_id": 763,
+          "message": "So, you have a blonde girl combing her hair?"
         },
         {
-          "timestamp": "00:12:39.003046",
+          "timestamp": "00:08:35.127645",
           "turn": 13,
-          "speaker": "B",
-          "agent_id": 120,
-          "message": "Got it"
+          "speaker": "A",
+          "agent_id": 914,
+          "message": "do you have the brown suitcase, with red wheel"
         },
         {
-          "timestamp": "00:12:48.336664",
+          "timestamp": "00:08:43.444958",
           "turn": 14,
           "speaker": "A",
-          "agent_id": 119,
-          "message": "<feedback>"
+          "agent_id": 914,
+          "message": "yes...I have the little girl"
         },
         {
-          "timestamp": "00:12:53.589318",
-          "turn": 14,
-          "speaker": "B",
-          "agent_id": 120,
-          "message": "finish this one?"
-        },
-        {
-          "timestamp": "00:12:58.930075",
+          "timestamp": "00:08:47.260836",
           "turn": 15,
-          "speaker": "A",
-          "agent_id": 119,
-          "message": "Okay I think that one's finished."
+          "speaker": "B",
+          "agent_id": 763,
+          "message": "Yes, I have that one."
         },
         {
-          "timestamp": "00:12:58.930422",
+          "timestamp": "00:08:49.183846",
           "turn": 16,
           "speaker": "B",
-          "agent_id": 120,
+          "agent_id": 763,
+          "message": "<selection> <com> person_suitcase/COCO_train2014_000000206968.jpg"
+        },
+        {
+          "timestamp": "00:08:50.943849",
+          "turn": 16,
+          "speaker": "A",
+          "agent_id": 914,
+          "message": "<selection> <com> person_suitcase/COCO_train2014_000000206968.jpg"
+        },
+        {
+          "timestamp": "00:08:55.040084",
+          "turn": 16,
+          "speaker": "A",
+          "agent_id": 914,
+          "message": "next pg"
+        },
+        {
+          "timestamp": "00:08:56.389726",
+          "turn": 17,
+          "speaker": "A",
+          "agent_id": 914,
           "message": "<feedback>"
         },
         {
-          "timestamp": "00:13:02.047759",
-          "turn": 16,
-          "speaker": "A",
-          "agent_id": 119,
+          "timestamp": "00:09:01.016122",
+          "turn": 17,
+          "speaker": "B",
+          "agent_id": 763,
+          "message": "<selection> <com> person_suitcase/COCO_train2014_000000086922.jpg"
+        },
+        {
+          "timestamp": "00:09:05.185598",
+          "turn": 17,
+          "speaker": "B",
+          "agent_id": 763,
+          "message": "<feedback>"
+        },
+        {
+          "timestamp": "00:09:07.555805",
+          "turn": 17,
+          "speaker": "B",
+          "agent_id": 763,
           "message": "<next_round>"
         },
         {
-          "timestamp": "00:13:07.827827",
-          "turn": 17,
-          "speaker": "B",
-          "agent_id": 120,
+          "timestamp": "00:09:08.171617",
+          "turn": 18,
+          "speaker": "A",
+          "agent_id": 914,
           "message": "<next_round>"
         }
       ]
@@ -892,35 +763,36 @@
       },
       "images": {
         "A": [
-          "person_bicycle/COCO_train2014_000000386326.jpg",
-          "person_bicycle/COCO_train2014_000000495580.jpg",
-          "person_bicycle/COCO_train2014_000000293658.jpg",
-          "person_bicycle/COCO_train2014_000000266311.jpg",
-          "person_bicycle/COCO_train2014_000000527112.jpg",
-          "person_bicycle/COCO_train2014_000000326202.jpg"
+          "person_suitcase/COCO_train2014_000000184319.jpg",
+          "person_suitcase/COCO_train2014_000000113123.jpg",
+          "person_suitcase/COCO_train2014_000000175391.jpg",
+          "person_suitcase/COCO_train2014_000000206968.jpg",
+          "person_suitcase/COCO_train2014_000000200221.jpg",
+          "person_suitcase/COCO_train2014_000000538682.jpg"
         ],
         "B": [
-          "person_bicycle/COCO_train2014_000000293658.jpg",
-          "person_bicycle/COCO_train2014_000000098596.jpg",
-          "person_bicycle/COCO_train2014_000000256981.jpg",
-          "person_bicycle/COCO_train2014_000000034815.jpg",
-          "person_bicycle/COCO_train2014_000000495580.jpg",
-          "person_bicycle/COCO_train2014_000000386326.jpg"
+          "person_suitcase/COCO_train2014_000000538682.jpg",
+          "person_suitcase/COCO_train2014_000000184319.jpg",
+          "person_suitcase/COCO_train2014_000000553308.jpg",
+          "person_suitcase/COCO_train2014_000000206968.jpg",
+          "person_suitcase/COCO_train2014_000000175391.jpg",
+          "person_suitcase/COCO_train2014_000000086922.jpg"
         ]
       },
       "common": [
-        "person_bicycle/COCO_train2014_000000293658.jpg",
-        "person_bicycle/COCO_train2014_000000495580.jpg",
-        "person_bicycle/COCO_train2014_000000386326.jpg"
+        "person_suitcase/COCO_train2014_000000184319.jpg",
+        "person_suitcase/COCO_train2014_000000538682.jpg",
+        "person_suitcase/COCO_train2014_000000175391.jpg",
+        "person_suitcase/COCO_train2014_000000206968.jpg"
       ],
       "highlighted": {
         "A": [
           false,
+          true,
           false,
           true,
-          true,
-          true,
-          false
+          false,
+          true
         ],
         "B": [
           true,
@@ -933,164 +805,143 @@
       },
       "messages": [
         {
-          "timestamp": "00:13:30.816859",
+          "timestamp": "00:09:21.700445",
           "turn": 0,
           "speaker": "A",
-          "agent_id": 119,
-          "message": "Okay, I have the same man doing the handstand on the beach."
+          "agent_id": 914,
+          "message": "bright green suitcase again?"
         },
         {
-          "timestamp": "00:13:43.612746",
+          "timestamp": "00:09:33.160590",
           "turn": 1,
           "speaker": "B",
-          "agent_id": 120,
-          "message": "Still don't have that one"
+          "agent_id": 763,
+          "message": "No."
         },
         {
-          "timestamp": "00:13:48.608361",
-          "turn": 2,
-          "speaker": "A",
-          "agent_id": 119,
-          "message": "<selection> <dif> person_bicycle/COCO_train2014_000000266311.jpg"
-        },
-        {
-          "timestamp": "00:13:49.382692",
+          "timestamp": "00:09:35.418552",
           "turn": 2,
           "speaker": "B",
-          "agent_id": 120,
-          "message": "I have man in orange loading bike to bus again"
+          "agent_id": 763,
+          "message": "Do you have the person going through an open suitcase with red tinting?"
         },
         {
-          "timestamp": "00:13:58.275566",
+          "timestamp": "00:09:37.259491",
           "turn": 3,
           "speaker": "A",
-          "agent_id": 119,
-          "message": "I don't have that one."
+          "agent_id": 914,
+          "message": "<selection> <dif> person_suitcase/COCO_train2014_000000113123.jpg"
         },
         {
-          "timestamp": "00:14:02.292420",
+          "timestamp": "00:09:49.831420",
+          "turn": 3,
+          "speaker": "A",
+          "agent_id": 914,
+          "message": "no"
+        },
+        {
+          "timestamp": "00:09:53.471293",
           "turn": 4,
           "speaker": "B",
-          "agent_id": 120,
-          "message": "<selection> <dif> person_bicycle/COCO_train2014_000000256981.jpg"
+          "agent_id": 763,
+          "message": "<selection> <dif> person_suitcase/COCO_train2014_000000553308.jpg"
         },
         {
-          "timestamp": "00:14:19.250889",
+          "timestamp": "00:10:01.193493",
           "turn": 4,
           "speaker": "A",
-          "agent_id": 119,
-          "message": "I have a man in what looks like racing gear on.  Shirt is red, white and blue with a starting line"
+          "agent_id": 914,
+          "message": "person staning on skareboard"
         },
         {
-          "timestamp": "00:14:22.196845",
+          "timestamp": "00:10:02.011834",
           "turn": 5,
-          "speaker": "A",
-          "agent_id": 119,
-          "message": "in the background."
+          "speaker": "B",
+          "agent_id": 763,
+          "message": "Do you have the person standing on top of a green skateboard?"
         },
         {
-          "timestamp": "00:14:42.534982",
+          "timestamp": "00:10:05.645512",
           "turn": 6,
           "speaker": "B",
-          "agent_id": 120,
-          "message": "Don't have that one"
+          "agent_id": 763,
+          "message": "Yes^^"
         },
         {
-          "timestamp": "00:14:45.934052",
+          "timestamp": "00:10:13.656631",
           "turn": 7,
           "speaker": "A",
-          "agent_id": 119,
-          "message": "<selection> <dif> person_bicycle/COCO_train2014_000000527112.jpg"
+          "agent_id": 914,
+          "message": "<selection> <com> person_suitcase/COCO_train2014_000000538682.jpg"
         },
         {
-          "timestamp": "00:14:51.502388",
+          "timestamp": "00:10:18.435615",
           "turn": 7,
           "speaker": "B",
-          "agent_id": 120,
-          "message": "I have same picture with two persons with train, woman in white jacket a gain"
+          "agent_id": 763,
+          "message": "Do you have the brown suitcase with the red wheel?"
         },
         {
-          "timestamp": "00:15:03.380096",
+          "timestamp": "00:10:31.878189",
           "turn": 8,
           "speaker": "A",
-          "agent_id": 119,
-          "message": "I don't have that one."
+          "agent_id": 914,
+          "message": "yes...next pg"
         },
         {
-          "timestamp": "00:15:07.062835",
+          "timestamp": "00:10:31.878631",
           "turn": 9,
           "speaker": "B",
-          "agent_id": 120,
-          "message": "<selection> <dif> person_bicycle/COCO_train2014_000000034815.jpg"
+          "agent_id": 763,
+          "message": "<selection> <com> person_suitcase/COCO_train2014_000000538682.jpg"
         },
         {
-          "timestamp": "00:15:15.822519",
+          "timestamp": "00:10:33.389432",
           "turn": 9,
           "speaker": "A",
-          "agent_id": 119,
-          "message": "I have the guy with pizzas on the front of the bike in a white shirt."
+          "agent_id": 914,
+          "message": "<selection> <com> person_suitcase/COCO_train2014_000000206968.jpg"
         },
         {
-          "timestamp": "00:15:23.026543",
-          "turn": 10,
-          "speaker": "B",
-          "agent_id": 120,
-          "message": "I have this one!"
-        },
-        {
-          "timestamp": "00:15:24.954612",
-          "turn": 11,
-          "speaker": "B",
-          "agent_id": 120,
-          "message": "<selection> <com> person_bicycle/COCO_train2014_000000293658.jpg"
-        },
-        {
-          "timestamp": "00:15:26.836561",
-          "turn": 11,
+          "timestamp": "00:10:34.122417",
+          "turn": 9,
           "speaker": "A",
-          "agent_id": 119,
-          "message": "<selection> <com> person_bicycle/COCO_train2014_000000293658.jpg"
-        },
-        {
-          "timestamp": "00:15:36.118907",
-          "turn": 11,
-          "speaker": "B",
-          "agent_id": 120,
+          "agent_id": 914,
           "message": "<feedback>"
         },
         {
-          "timestamp": "00:16:20.190710",
-          "turn": 11,
+          "timestamp": "00:10:38.494255",
+          "turn": 9,
           "speaker": "B",
-          "agent_id": 120,
-          "message": "Anything else?"
+          "agent_id": 763,
+          "message": "<selection> <com> person_suitcase/COCO_train2014_000000206968.jpg"
         },
         {
-          "timestamp": "00:16:26.610991",
-          "turn": 12,
-          "speaker": "A",
-          "agent_id": 119,
-          "message": "Nope, I think that's it."
-        },
-        {
-          "timestamp": "00:16:29.314458",
-          "turn": 13,
-          "speaker": "A",
-          "agent_id": 119,
+          "timestamp": "00:10:41.111816",
+          "turn": 9,
+          "speaker": "B",
+          "agent_id": 763,
           "message": "<feedback>"
         },
         {
-          "timestamp": "00:16:31.235970",
-          "turn": 13,
-          "speaker": "A",
-          "agent_id": 119,
+          "timestamp": "00:10:44.012095",
+          "turn": 9,
+          "speaker": "B",
+          "agent_id": 763,
           "message": "<next_round>"
         },
         {
-          "timestamp": "00:16:33.322223",
-          "turn": 14,
+          "timestamp": "00:10:54.203847",
+          "turn": 10,
           "speaker": "B",
-          "agent_id": 120,
+          "agent_id": 763,
+          "message": "Final page, yay!"
+        },
+        {
+          "timestamp": "00:10:54.204101",
+          "turn": 11,
+          "speaker": "A",
+          "agent_id": 914,
           "message": "<next_round>"
         }
       ]
@@ -1103,207 +954,226 @@
       },
       "images": {
         "A": [
-          "person_bicycle/COCO_train2014_000000527112.jpg",
-          "person_bicycle/COCO_train2014_000000086189.jpg",
-          "person_bicycle/COCO_train2014_000000266311.jpg",
-          "person_bicycle/COCO_train2014_000000293658.jpg",
-          "person_bicycle/COCO_train2014_000000386722.jpg",
-          "person_bicycle/COCO_train2014_000000495580.jpg"
+          "person_suitcase/COCO_train2014_000000553308.jpg",
+          "person_suitcase/COCO_train2014_000000037327.jpg",
+          "person_suitcase/COCO_train2014_000000113123.jpg",
+          "person_suitcase/COCO_train2014_000000160471.jpg",
+          "person_suitcase/COCO_train2014_000000257858.jpg",
+          "person_suitcase/COCO_train2014_000000175391.jpg"
         ],
         "B": [
-          "person_bicycle/COCO_train2014_000000527112.jpg",
-          "person_bicycle/COCO_train2014_000000266311.jpg",
-          "person_bicycle/COCO_train2014_000000086189.jpg",
-          "person_bicycle/COCO_train2014_000000098596.jpg",
-          "person_bicycle/COCO_train2014_000000495580.jpg",
-          "person_bicycle/COCO_train2014_000000441488.jpg"
+          "person_suitcase/COCO_train2014_000000187582.jpg",
+          "person_suitcase/COCO_train2014_000000184319.jpg",
+          "person_suitcase/COCO_train2014_000000086922.jpg",
+          "person_suitcase/COCO_train2014_000000175391.jpg",
+          "person_suitcase/COCO_train2014_000000160471.jpg",
+          "person_suitcase/COCO_train2014_000000200221.jpg"
         ]
       },
       "common": [
-        "person_bicycle/COCO_train2014_000000527112.jpg",
-        "person_bicycle/COCO_train2014_000000495580.jpg",
-        "person_bicycle/COCO_train2014_000000266311.jpg",
-        "person_bicycle/COCO_train2014_000000086189.jpg"
+        "person_suitcase/COCO_train2014_000000160471.jpg",
+        "person_suitcase/COCO_train2014_000000175391.jpg"
       ],
       "highlighted": {
         "A": [
+          true,
+          true,
+          true,
           false,
-          true,
-          true,
-          true,
           false,
           false
         ],
         "B": [
           true,
-          true,
-          true,
           false,
+          true,
+          true,
           false,
           false
         ]
       },
       "messages": [
         {
-          "timestamp": "00:16:50.940448",
+          "timestamp": "00:11:05.929378",
           "turn": 0,
           "speaker": "A",
-          "agent_id": 119,
-          "message": "Okay, first one:  girl in pink skirt and bikini top again."
+          "agent_id": 914,
+          "message": "open suitcase...red tint"
         },
         {
-          "timestamp": "00:17:10.616807",
+          "timestamp": "00:11:11.976579",
           "turn": 1,
           "speaker": "B",
-          "agent_id": 120,
-          "message": "I have this one"
+          "agent_id": 763,
+          "message": "No."
         },
         {
-          "timestamp": "00:17:12.908170",
+          "timestamp": "00:11:14.342515",
           "turn": 2,
           "speaker": "B",
-          "agent_id": 120,
-          "message": "<selection> <com> person_bicycle/COCO_train2014_000000086189.jpg"
+          "agent_id": 763,
+          "message": "Do you have a little girl holding a black suitcase?"
         },
         {
-          "timestamp": "00:17:13.641102",
-          "turn": 2,
-          "speaker": "A",
-          "agent_id": 119,
-          "message": "<selection> <com> person_bicycle/COCO_train2014_000000086189.jpg"
-        },
-        {
-          "timestamp": "00:17:24.063051",
-          "turn": 2,
-          "speaker": "B",
-          "agent_id": 120,
-          "message": "Handstanding man on the beach"
-        },
-        {
-          "timestamp": "00:17:37.307218",
+          "timestamp": "00:11:16.100735",
           "turn": 3,
           "speaker": "A",
-          "agent_id": 119,
-          "message": "Yep!"
+          "agent_id": 914,
+          "message": "<selection> <dif> person_suitcase/COCO_train2014_000000553308.jpg"
         },
         {
-          "timestamp": "00:17:40.288027",
+          "timestamp": "00:11:24.766869",
+          "turn": 3,
+          "speaker": "A",
+          "agent_id": 914,
+          "message": "olive green suitcase"
+        },
+        {
+          "timestamp": "00:11:30.611957",
           "turn": 4,
           "speaker": "B",
-          "agent_id": 120,
-          "message": "<selection> <com> person_bicycle/COCO_train2014_000000266311.jpg"
+          "agent_id": 763,
+          "message": "<selection> <dif> person_suitcase/COCO_train2014_000000187582.jpg"
         },
         {
-          "timestamp": "00:17:40.288062",
+          "timestamp": "00:11:39.803789",
           "turn": 4,
-          "speaker": "A",
-          "agent_id": 119,
-          "message": "I have him."
+          "speaker": "B",
+          "agent_id": 763,
+          "message": "I don't have the olive green suitcase."
         },
         {
-          "timestamp": "00:17:42.409731",
+          "timestamp": "00:11:41.972256",
           "turn": 5,
-          "speaker": "A",
-          "agent_id": 119,
-          "message": "<selection> <com> person_bicycle/COCO_train2014_000000266311.jpg"
+          "speaker": "B",
+          "agent_id": 763,
+          "message": "Blonde girl combing her hair?"
         },
         {
-          "timestamp": "00:17:54.430397",
-          "turn": 5,
-          "speaker": "A",
-          "agent_id": 119,
-          "message": "I have the man with pizzas again, going over the wooden ramp."
-        },
-        {
-          "timestamp": "00:18:04.690731",
+          "timestamp": "00:11:51.057634",
           "turn": 6,
-          "speaker": "B",
-          "agent_id": 120,
-          "message": "Don't have that one"
+          "speaker": "A",
+          "agent_id": 914,
+          "message": "<selection> <dif> person_suitcase/COCO_train2014_000000037327.jpg"
         },
         {
-          "timestamp": "00:18:20.364678",
+          "timestamp": "00:11:58.359568",
+          "turn": 6,
+          "speaker": "A",
+          "agent_id": 914,
+          "message": "no..to the little girl"
+        },
+        {
+          "timestamp": "00:12:06.048169",
           "turn": 7,
           "speaker": "A",
-          "agent_id": 119,
-          "message": "<selection> <dif> person_bicycle/COCO_train2014_000000293658.jpg"
+          "agent_id": 914,
+          "message": "bright green suitcase"
         },
         {
-          "timestamp": "00:18:21.432025",
-          "turn": 7,
-          "speaker": "B",
-          "agent_id": 120,
-          "message": "I have the man in racing gear, shirt is blue white and red again"
-        },
-        {
-          "timestamp": "00:18:28.840394",
+          "timestamp": "00:12:09.769328",
           "turn": 8,
-          "speaker": "A",
-          "agent_id": 119,
-          "message": "I have that one."
+          "speaker": "B",
+          "agent_id": 763,
+          "message": "<selection> <dif> person_suitcase/COCO_train2014_000000086922.jpg"
         },
         {
-          "timestamp": "00:18:32.447405",
+          "timestamp": "00:12:13.527965",
+          "turn": 8,
+          "speaker": "B",
+          "agent_id": 763,
+          "message": "Nope."
+        },
+        {
+          "timestamp": "00:12:15.893729",
           "turn": 9,
           "speaker": "B",
-          "agent_id": 120,
-          "message": "<selection> <com> person_bicycle/COCO_train2014_000000527112.jpg"
+          "agent_id": 763,
+          "message": "Do you have a little boy stuffed inside a suitcase?"
         },
         {
-          "timestamp": "00:18:50.000739",
-          "turn": 9,
-          "speaker": "B",
-          "agent_id": 120,
-          "message": "Cool. Any other pictures?"
-        },
-        {
-          "timestamp": "00:18:54.392700",
+          "timestamp": "00:12:19.208395",
           "turn": 10,
           "speaker": "A",
-          "agent_id": 119,
-          "message": "Nope!"
+          "agent_id": 914,
+          "message": "<selection> <dif> person_suitcase/COCO_train2014_000000113123.jpg"
         },
         {
-          "timestamp": "00:18:56.238513",
-          "turn": 11,
+          "timestamp": "00:12:23.904205",
+          "turn": 10,
           "speaker": "A",
-          "agent_id": 119,
+          "agent_id": 914,
+          "message": "yes"
+        },
+        {
+          "timestamp": "00:12:26.604391",
+          "turn": 11,
+          "speaker": "B",
+          "agent_id": 763,
+          "message": "<selection> <com> person_suitcase/COCO_train2014_000000175391.jpg"
+        },
+        {
+          "timestamp": "00:12:33.263222",
+          "turn": 11,
+          "speaker": "B",
+          "agent_id": 763,
+          "message": "Me too!  I guess we're done"
+        },
+        {
+          "timestamp": "00:12:35.796536",
+          "turn": 12,
+          "speaker": "B",
+          "agent_id": 763,
           "message": "<feedback>"
         },
         {
-          "timestamp": "00:18:58.493013",
-          "turn": 11,
-          "speaker": "B",
-          "agent_id": 120,
-          "message": "<feedback>"
-        },
-        {
-          "timestamp": "00:19:11.908598",
-          "turn": 11,
-          "speaker": "B",
-          "agent_id": 120,
-          "message": "Great! nice playing with you!"
-        },
-        {
-          "timestamp": "00:19:23.271945",
+          "timestamp": "00:12:36.861346",
           "turn": 12,
           "speaker": "A",
-          "agent_id": 119,
-          "message": "Thanks so much!  You're awesome!"
+          "agent_id": 914,
+          "message": "next pg?"
         },
         {
-          "timestamp": "00:19:30.585778",
+          "timestamp": "00:12:39.271517",
           "turn": 13,
-          "speaker": "B",
-          "agent_id": 120,
-          "message": "<usr_feedback> col:5<&>partner_u:5<&>self_u:5<&>text: no"
+          "speaker": "A",
+          "agent_id": 914,
+          "message": "yeah"
         },
         {
-          "timestamp": "00:19:35.133106",
+          "timestamp": "00:12:40.455660",
           "turn": 14,
           "speaker": "A",
-          "agent_id": 119,
-          "message": "<usr_feedback> col:5<&>partner_u:5<&>self_u:5<&>text: This was awesome!"
+          "agent_id": 914,
+          "message": "<feedback>"
+        },
+        {
+          "timestamp": "00:12:50.275113",
+          "turn": 14,
+          "speaker": "A",
+          "agent_id": 914,
+          "message": "Thanks...bye"
+        },
+        {
+          "timestamp": "00:12:50.524531",
+          "turn": 15,
+          "speaker": "B",
+          "agent_id": 763,
+          "message": "<usr_feedback> col:5<&>partner_u:5<&>self_u:5<&>text: "
+        },
+        {
+          "timestamp": "00:12:54.984822",
+          "turn": 16,
+          "speaker": "B",
+          "agent_id": 763,
+          "message": "You too!"
+        },
+        {
+          "timestamp": "00:13:05.806846",
+          "turn": 17,
+          "speaker": "A",
+          "agent_id": 914,
+          "message": "<usr_feedback> col:5<&>partner_u:5<&>self_u:5<&>text: Thank you"
         }
       ]
     }
@@ -1314,42 +1184,25 @@
           </div>
 
         <!-- Footer -->
+ <!-- Footer -->
           <footer id="footer">
             <div class="inner">
               <section>
-                <h2>Get in touch</h2>
-                <form method="post" action="#">
-                  <div class="fields">
-                    <div class="field half">
-                      <input type="text" name="name" id="name" placeholder="Name" />
-                    </div>
-                    <div class="field half">
-                      <input type="email" name="email" id="email" placeholder="Email" />
-                    </div>
-                    <div class="field">
-                      <textarea name="message" id="message" placeholder="Message"></textarea>
-                    </div>
-                  </div>
-                  <ul class="actions">
-                    <li><input type="submit" value="Send" class="primary" /></li>
-                  </ul>
-                </form>
+                <h2>Contact</h2>
+                <ul class="icons">
+                  <li> For questions and remarks about this website or the PhotoBook Task and Dataset, please contact <a href="mailto:j.haber@qmul.ac.uk"> Janosch Haber</li>
+                  <li> <a href="https://github.com/dmg-photobook/photobook_dataset.git" class="icon style2 fa-github"><span class="label">GitHub</span></a></li>  
+                </ul>
+                Raquel Fernández<br />
+                  Science Park 107, office F1.07 <br />
+                  +31 (0)20 525 7009  <br />
               </section>
               <section>
-                <h2>Follow</h2>
-                <ul class="icons">
-                  <li><a href="#" class="icon style2 fa-twitter"><span class="label">Twitter</span></a></li>
-                  <li><a href="#" class="icon style2 fa-facebook"><span class="label">Facebook</span></a></li>
-                  <li><a href="#" class="icon style2 fa-instagram"><span class="label">Instagram</span></a></li>
-                  <li><a href="#" class="icon style2 fa-dribbble"><span class="label">Dribbble</span></a></li>
-                  <li><a href="#" class="icon style2 fa-github"><span class="label">GitHub</span></a></li>
-                  <li><a href="#" class="icon style2 fa-500px"><span class="label">500px</span></a></li>
-                  <li><a href="#" class="icon style2 fa-phone"><span class="label">Phone</span></a></li>
-                  <li><a href="#" class="icon style2 fa-envelope-o"><span class="label">Email</span></a></li>
-                </ul>
+                
+
               </section>
               <ul class="copyright">
-                <li>&copy; Untitled. All rights reserved</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+                <li>&copy; Dialogue Modeling Group, University of Amsterdaom. All rights reserved</li><li>Design: <a href="http://html5up.net" target="_blank">HTML5 UP</a></li>
               </ul>
             </div>
           </footer>
