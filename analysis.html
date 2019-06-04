@@ -22,7 +22,7 @@
 
               <!-- Logo -->
               <a href="index.html" class="logo">
-                  <span class="symbol"><img src="images/fb_logo.png" alt="" /></span><span class="title">The PhotoBook Task and Dataset</span>
+                  <span class="symbol"><img src="images/fb_logo_2.png" alt="" /></span><span class="title">The PhotoBook Task and Dataset</span>
                 </a>
                 
 
@@ -54,8 +54,132 @@
           <div id="main">
             <div class="inner">
               <h1>Analysis</h1>  
+              <a href="#in-game">In-Game Analysis</a><br />
+				<a href="#inter-game">Inter-Game Analysis</a><br /><br />
 
-Under development - coming soon.
+
+
+By tracking participants through up to five games of five rounds each, the PhotoBook dataset allows for investigating both in-game and inter-game effects. An in-depth analysis of both of these dimensions can be found in chapter 5 of Janosch Haber's Master's Thesis
+<blockquote>
+		Janosch Haber.<br />
+		<a href="https://esc.fnwi.uva.nl/thesis/centraal/files/f738860517.pdf" target="_blank"><b>How should we call it? - Introducing the PhotoBook Conversation Task and Dataset <br />for Training Natural Referring Expression Generation in Artificial Dialogue Agents.
+</b></a><i> <br />
+		Master’s Thesis. University of Amsterdam. Amsterdam, The Netherlands</i>, 2018
+	</blockquote>
+
+<h2 id="in-game">In-Game Analysis</h2>
+
+In this section we focus on the analysis of participants’ interaction during a game of five labelling
+rounds. Our data here largely confirms the observations concerning participants’ task efficiency
+and language use during a multi-round communication task made by seminal, small-scale experiments such as those by Krauss and Weinheimer
+(1964); Clark and Wilkes-Gibbs (1986); Brennan
+and Clark (1996) and, due to its scale, offers additional aspects for further investigation.<br /><br />
+
+<h3>Task Efficiency</h3>
+
+ <span class="image main"><img src="images/analysis_1.png" alt="" /></span>
+
+Completing the first round of the PhotoBook task
+takes participants an average of almost three minutes. Completing the fifth round on the other hand
+takes them about half that time. As Figure 1a
+shows, this decline roughly follows a negative logarithmic function, with significant differences between rounds 1, 2, 3 and 4, and plateauing towards
+the last round. The number of messages sent by
+participants as well as the average message length
+follow a similar pattern, significantly decreasing
+between consecutive game rounds. The average
+number of correct image labels, on the other hand,
+significantly increases between the first and last
+round of the game (cf. the red dashed graph in Figure 1a). As a result, <b>task efficiency as calculated
+by points per minute significantly increases with
+each game round.</b> <br /><br />
+
+<h3>Linguistic Properties of Utterances</h3>
+ 
+To get a better understanding of how participants
+increase task efficiency and shorten their utterances, we analyse how the linguistic characteristics of messages change over a game.
+We calculated a normalised content word ratio
+by dividing the count of content words by the total token count. This results in an almost linear
+increase of content tokens over total token ratio
+throughout a game (average Pearson’s r per game
+of 0.34, p < 0.05, see Figure 1b). <br /><br />
+
+With referring expressions and messages in general getting
+shorter, content words thus appear to be favoured
+to remain. We also observe that participants reuse
+these content words. Figure 1c shows the number of novel content tokens per game round, which
+roughly follows a negative logarithmic function.
+This supports the hypothesis of participants establishing a conceptual pact on the referring expression attached to a specific referent: <b>Once accepted,
+a referring expression is typically refined through
+shortening rather than by reformulating or adding
+novel information</b> (cf., Brennan and Clark, 1996).<br /><br />
+
+We also analysed in more detail the distribution of word classes per game round by tagging
+messages with the NLTK POS-Tagger. Figure 1d
+displays the relative changes in content-word-class
+usage between the first round and last round of a
+game. All content word classes but verbs show a
+relative increase in occurrence, most prominently
+nouns with a 20% relative increase. The case of
+adverbs, which show a 12% relative increase, is
+particular: Manual examination showed that most
+adverbs are not used to described images but rather
+to flag that a given image has already appeared before or to confirm/reject (‘again’ and ‘too’ make
+up 21% of all adverb occurrences; about 36% are
+‘not’, ‘n’t’ and ‘yes’). <br /><br />
+
+These results indicate that
+<b>interlocutors are most likely to retain the nouns
+and adjectives of a developing referring expression, while increasingly dropping verbs, as well
+as prepositions and determiners.</b> A special role
+here takes definite determiner ‘the’, which, in spite
+of the stark decline of determiners in general, increases by 13% in absolute occurrence counts between the first and last round of a game, suggesting a shift towards known information. <br /><br />
+
+Finally, in contrast to current visual dialogue
+datasets (Das et al., 2017; De Vries et al., 2017)
+which exclusively contain sequences of questionanswer pairs, the PhotoBook dataset includes
+diverse dialogue acts. Qualitative examination
+shows that, not surprisingly, a large proportion
+of messages include an image description. These
+<b>descriptions however are interleaved with clarification questions, acceptances/rejections, and acknowledgements</b>. <br /><br />
+
+<h2 id="inter-game">Inter-Game Analysis</h2>
+
+Coming soon.
+
+<h3>References</h3>
+	<ul>
+		<li>
+Susan E. Brennan and Herbert H. Clark. 1996. Conceptual pacts and lexical choice in conversation. <i>
+Journal of Experimental Psychology: Learning,
+Memory, and Cognition, </i> 22:1482–1493. 
+</li>
+<li>
+
+Herbert H. Clark. 1996. <i>Using Language</i>. ’Using’ Linguistic Books. Cambridge University Press.
+</li>
+<li>
+
+Herbert H. Clark and Deanna Wilkes-Gibbs. 1986.
+Referring as a collaborative process. <i>Cognition</i>,
+22(1):1 – 39.
+</li>
+<li>
+Abhishek Das, Satwik Kottur, Khushi Gupta, Avi
+Singh, Deshraj Yadav, Jose M.F. Moura, Devi ´
+Parikh, and Dhruv Batra. 2017. Visual Dialog. <i>In
+Proceedings of CVPR</i>.
+</li>
+<li>
+Harm De Vries, Florian Strub, Jermie Mary, Hugo
+Larochelle, Olivier Pietquin, and Aaron Courville.
+2017b. Modulating early visual processing by language. <i>In Proceedings of NIPS</i>
+</li>
+<li>
+Robert M. Krauss and Sidney Weinheimer. 1964.
+Changes in reference phrases as a function of frequency of usage in social interaction: a preliminary
+study. <i>Psychonomic Science</i>, 1(1):113–114.
+</li>
+</ul>
 
 </div>
           </div>

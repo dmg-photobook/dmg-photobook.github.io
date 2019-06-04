@@ -22,7 +22,7 @@
 
 							<!-- Logo -->
 							<a href="index.html" class="logo">
-									<span class="symbol"><img src="images/fb_logo.png" alt="" /></span><span class="title">The PhotoBook Task and Dataset</span>
+									<span class="symbol"><img src="images/fb_logo_2.png" alt="" /></span><span class="title">The PhotoBook Task and Dataset</span>
 								</a>
 								
 
@@ -57,11 +57,12 @@
 						<a href="#dialogue_samples">Dialogue Samples</a><br />
 						<a href="#architecture">Dataset Architecture</a><br />
 						<a href="#processor">Dataset Processor</a><br />
+						<a href="#visualisation">Visualisation</a><br />
 						<a href="downloads.html">Download</a>
 						<br />
 						<br />
 
-						<p><b>The PhotoBook Dataset was collected using a dedicated conversation task called the PhotoBook Task</b>. In the PhotoBook task, two participants are paired for an online multi-round image identification game. In this game they are  shown collections of images which resemble the page of a photo book. Each of these collections is a randomly ordered grid of six similar images depicting <b>everyday scenes extracted from the MS COCO Dataset</b>. On each page of the photo book, some of the images are present in the displays of both participants (the <i>common images</i>). The other images are each shown to one of the participants only (the <i>different images</i>). Three of the images in each display are highlighted through a yellow bar under the picture. The participants are tasked to mark these highlighted  target images as either <i>common</i> or <i>different</i> by chatting with their partner. 
+						<p><b>The PhotoBook Dataset was collected using a dedicated conversation task called the PhotoBook Task</b>. In the PhotoBook task, two participants are paired for an online multi-round image identification game. In this game they are  shown collections of images which resemble the page of a photo book. Each of these collections is a randomly ordered grid of six similar images depicting <b>everyday scenes extracted from the MS COCO Dataset</b>. On each page of the photo book, some of the images are present in the displays of both participants (the <i>common images</i>). The other images are each shown to one of the participants only (the <i>different images</i>). Three of the images in each display are highlighted through a yellow bar under the picture. The participants are tasked to mark these highlighted  target images as either <i>common</i> or <i>different</i> by chatting with their partner. A full game consists of five consecutive rounds, where some of the previously displayed images will re-appear in later rounds, prompting participants to re-refer to them multiple times
 				    </p>
  <span class="image main"><img src="images/screenshot_game.png" alt="" /></span>
 
@@ -86,8 +87,8 @@ the author, timestamp and content of all sent messages, label selections and but
 	and Janosch Haber's Master's Thesis
 		<blockquote>
 		Janosch Haber.<br />
-		<b>How should we call it? - Introducing the PhotoBook Conversation Task and Dataset <br />for Training Natural Referring Expression Generation in Artificial Dialogue Agents.
-</b><i> <br />
+		<a href="https://esc.fnwi.uva.nl/thesis/centraal/files/f738860517.pdf" target="_blank"><b>How should we call it? - Introducing the PhotoBook Conversation Task and Dataset <br />for Training Natural Referring Expression Generation in Artificial Dialogue Agents.
+</b></a><i> <br />
 		Master’s Thesis. University of Amsterdam. Amsterdam, The Netherlands</i>, 2018
 	</blockquote>
 
@@ -161,11 +162,11 @@ In most cases, referring expressions agreed upon during the first rounds of a ga
 <b>L</b>: <i>Yellow/white bus being towed by blue</i><br />
 </blockquote>
 
-Samples of full participant interactions can be <a href="">viewed here</a>.<br /><br />
+A sample of full game of five rounds of participant interactions can be seen <a href="transcript_example.html" target="_blank">here</a>.<br /><br />
 
 <h2 id="architecture">Dataset Architecture</h2>
 
-<b>The PhotoBook Dataset can be downloaded <a href="">here</a></b>.<br /><br /> 
+<b>The PhotoBook Dataset can be downloaded <a href="downloads.html">here</a></b>.<br /><br /> 
 
 The PhotoBook Dataset contains 2502 complete dialogues collected through the PhotoBook Conversation task. The dataset is anonymized but allows for tracking specific users over multiple games through a unique agent ID. 
 
@@ -340,8 +341,7 @@ The processor can be included into a Python project by adding <code>from process
     return logs
 </code></pre>
 Then specify the relative path to the log folder and call the <code>load_logs</code> function:<br /><br />
-<pre><code>
-data_path = ""
+<pre><code>data_path = ""
 logs = load_logs("logs", data_path)
 </code></pre>
 
@@ -537,6 +537,8 @@ The processor creates a list of <code>Log</code> objects that hold the same thre
 	</table>
 </div>
 
+<h2 id="visualisation">Visualisation</h2>
+
 The following snippet will print a game transcript as shown <a href="transcript_example.html" target="_blank">here</a>: <br /><br />
 
 <pre><code>def print_transcript(log):
@@ -566,6 +568,8 @@ The following snippet will print a game transcript as shown <a href="transcript_
         print("Number of messages: {}\n".format(round_data.num_messages))
 
 </code></pre>
+
+A similar tool to create HTML visualisations of the games including the displayed sets of images will be made available soon.
 
 						</div>
 					</div>
