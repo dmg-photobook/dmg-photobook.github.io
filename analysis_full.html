@@ -54,6 +54,10 @@
           <div id="main">
             <div class="inner">
               <h1>Analysis</h1>  
+              <a href="#in-game">In-Game Analysis</a><br />
+				<a href="#inter-game">Inter-Game Analysis</a><br /><br />
+
+
 
 By tracking participants through up to five games of five rounds each, the PhotoBook dataset allows for investigating both in-game and inter-game effects. An in-depth analysis of both of these dimensions can be found in chapter 5 of Janosch Haber's Master's Thesis
 <blockquote>
@@ -62,16 +66,12 @@ By tracking participants through up to five games of five rounds each, the Photo
 </b></a><i> <br />
 		Master’s Thesis. University of Amsterdam. Amsterdam, The Netherlands</i>, 2018
 	</blockquote>
+The following sections will highlight some of the central features and observations of the PhotoBook Dataset. <br /><br />
 
-Here we will focus on the analysis of participants’ interaction during a game of five labelling
-rounds as reported in
-<blockquote>
-    Janosch Haber, Tim Baumgärtner, Ece Takmaz, Lieke Gelderloos, Elia Bruni, and Raquel Fernández. <br />
-    <a href="https://arxiv.org/abs/1906.01530" target="_blank"><b>The PhotoBook Dataset: Building Common Ground through Visually Grounded Dialogue.</b></a><i> <br />
-    In Proceedings of the 57th Annual Meeting of the Association for Computational Linguistics (ACL)</i>, 2019
-  </blockquote>
+<h2 id="in-game">In-Game Analysis</h2>
 
-The data collected in the PhotoBook dataset largely confirms observations concerning participants’ task efficiency
+In this section we focus on the analysis of participants’ interaction during a game of five labelling
+rounds. Our data here largely confirms the observations concerning participants’ task efficiency
 and language use during a multi-round communication task made by seminal, small-scale experiments such as those by Krauss and Weinheimer
 (1964); Clark and Wilkes-Gibbs (1986); Brennan
 and Clark (1996) and, due to its scale, offers additional aspects for further investigation.<br /><br />
@@ -141,15 +141,78 @@ which exclusively contain sequences of questionanswer pairs, the PhotoBook datas
 diverse dialogue acts. Qualitative examination
 shows that, not surprisingly, a large proportion
 of messages include an image description. These
-descriptions however are interleaved with <b>clarification questions, acceptances/rejections, and acknowledgements</b>. <br />
+descriptions however are interleaved with <b>clarification questions, acceptances/rejections, and acknowledgements</b>. <br /><br />
 
-<hr>
+<h2 id="inter-game">Inter-Game Analysis</h2>
 
-The analysis presented here can be replicated with the <code><a href="https://github.com/dmg-photobook/photobook_dataset/blob/master/ACL_Analysis.ipynb" target="_blank">ACL_Analysis.ipynb</a></code> Jupyter Notebook available in <a href="downloads.html">here</a> in the download section. To run the script, place it in the same folder as the logs folder and the Out-of-Vocabulary Dictionary <code>oov_dictionary.pickle</code> and excecute the notebook.
+<b>The PhotoBook task was completed by pairs of a total of 1514 unique
+workers</b>, of which 472 only completed a single game, 448 completed
+between two and four games and 594 the maximum of five games (see
+Figure 2a for a full overview). <br /><br />
 
-<br />
+<span class="image main"><img src="images/analysis_2.png" alt="" /></span>
 
-<hr>
+Completing a full five-round game took an average of 14.2 minutes, with
+times ranging from 4 minutes to some scattered outliers of up to 53
+minutes (see Figure 2b). Grouping games by the order in which they were completed by the
+participants, we follow Brennan and Clark (1996) and investigate the
+effect of participants completing multiple consecutive games. Similar to
+their results, Figure 2c shows that <b>the average game time decreases per
+subsequent game in the PhotoBook task</b> as well.<br /><br />
+
+<h3>Scores</h3>
+
+With three highlighted images per player per round, during a full game
+of five rounds 30 labelling decisions have to be made. On average,
+participants correctly label 28.62 out of these 30. <b>39% of all games
+reached full scores</b>, and only 1.2% of all completed games did not
+reach our pre-set minimum score of 24 points (see Figure 3a).<br /><br /> 
+
+<span class="image main"><img src="images/analysis_3.png" alt="" /></span>
+
+Investigating the game scores obtained in subsequent games (Figure
+3b), we can observe a slight drop in game score between the first
+and second game, followed by a continuous increase in score until
+they surpass the first game’s score in the fourth one. All of these
+relative changes in game score however are below significance level
+when compared to the respective previous game score.
+Filtering all games of participants that did not complete the full set of
+five games results in a convex graph, with the third game scoring
+lowest (Figure 3c, all relative changes
+with respect to the previous game’s scores are non-significant).<br /><br />
+
+<h3>Order of Selections</h3>
+
+<span class="image main"><img src="images/analysis_4.png" alt="" /></span>
+
+
+Figure 4 shows the distribution of games where the nth selection
+per game round was either an image that was selected in a previous
+round or a selection of an image that was selected for the first time
+during that round. While an in-depth comparison of these statistics per
+round is a non-trivial endeavour because the percentage of previously
+selected pictures increases throughout a game (given the limited set
+of candidate images in a game), the graph clearly shows that <b>within a
+single game round participants tend to first select (and therefore refer
+to) images that were selected in a previous round already</b>, and only later
+turn to those images that need to be selected for the first time. This
+preference holds throughout all later rounds of the game.<br /><br />
+
+<h3>Linguistic Analysis</h3>
+
+<span class="image main"><img src="images/analysis_5.png" alt="" /></span>
+
+
+The figures above show a sample of the in-depth lignuistic analysis of the PhotoBook dataset reported in Janosch Haber's thesis. The left figure for example displays the ten most frequent words succeeding a determiner, together with a distribution of the n-grams succeeding them. Persons and colours here seem to play a central role in developing image descriptions and re-references. In order to further investigate any structural differences in descriptions and references, we split the n-grams into two
+groups, one succeeding indefinite determiners (center) and those
+following a definite determiner (right). In the former case
+the distribution is very similar to that of the overlall most frequent words in 5a. In the latter case we however can observe
+some differences to the other two distributions with tri-grams starting
+with ’one’ and ’same’ entering the top 10. Both of them indicate references
+to previously seen images (i.e. ’the one with the big teddy bear’ or ’the same red bus as last round’).
+
+
+<br /><br />
 
 <h3>References</h3>
 	<ul>
