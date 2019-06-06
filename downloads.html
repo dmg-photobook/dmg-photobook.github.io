@@ -10,6 +10,10 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
     <link rel="stylesheet" href="assets/css/main.css" />
+    <link rel="apple-touch-icon" sizes="180x180" href="images/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="images/favicon-16x16.png">
+<link rel="manifest" href="/site.webmanifest">
     <noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
   </head>
   <body class="is-preload">
@@ -54,8 +58,13 @@
           <div id="main">
             <div class="inner">
               <h1>Downloads</h1>  
+              <a href="#photobook">The PhotoBook Dataset</a><br />
+            <a href="#analysis">Segmentation Evaluation and Validation</a><br />
+            <a href="#segment">Segment Chain Data Set</a><br />
+            <br />
+            <br /> 
 
-              <h2>The PhotoBook Dataset</h2>
+              <h2 id="photobook">The PhotoBook Dataset</h2>
 
 				The PhotoBook Dataset can be cloned from the Github repository at <a href="https://github.com/dmg-photobook/photobook_dataset" target="_blank">https://github.com/dmg-photobook/photobook_dataset</a>.<br /><br />
 
@@ -66,8 +75,8 @@
 				<a href="https://github.com/dmg-photobook/photobook_dataset/raw/master/images.zip" target="_blank">The PhotoBook Image Sets</a> (zip-compressed, 60MB)<br /><br />
 
 				<a href="https://raw.githubusercontent.com/dmg-photobook/photobook_dataset/master/processor.py" target="_blank">The PhotoBook Processor</a> (Python class, 5kB)<br /><br />
-
-			<h2>The ACL Analysis</h2>
+        <hr>
+			<h2 id=analysis>The ACL Analysis</h2>
 
 				The script to replicate the analysis presented <a href="analysis.html">here</a> and in our ACL paper can be viewed <a href="https://github.com/dmg-photobook/photobook_dataset/blob/master/ACL_Analysis.ipynb" target="_blank">here</a> and downloaded from <a href="https://raw.githubusercontent.com/dmg-photobook/photobook_dataset/master/ACL_Analysis.ipynb" target="_blank">here</a>. Running the notebook requires the log folder and the out-of-vocabulary dictionary <code>oov_dictionary.pickle</code> available <a href="https://github.com/dmg-photobook/photobook_dataset/blob/master/oov_dictionary.pickle?raw=true" target="_blank">here</a>. <br /> <br />
 
@@ -78,8 +87,12 @@
 				<a href="https://github.com/dmg-photobook/photobook_dataset/blob/master/game_statistics.pickle?raw=true" target="_blank">game_statistics.pickle</a> (pickled, 1.12 MB)  <br /> <br />
 
 				<a href="https://github.com/dmg-photobook/photobook_dataset/blob/master/worker_data.pickle?raw=true" target="_blank">worker_data.pickle</a> (pickled, 514 kB)  <br /> <br />
+<hr>
+      <h2 id="segment">The Segment Chain Dataset</h2>
 
+      The segment chain dataset creator can be downloaded from github <a href="https://github.com/dmg-photobook/photobook_dataset/tree/master/segmentation" target="_blank">here</a>, or as a zipped archive <a href="https://github.com/dmg-photobook/photobook_dataset/raw/master/segmentation.zip" target="_blank">here</a> (zipped, 6.3MB). To execute the files, place the <code>log</code> folder into the project's <code>data</code> folder. Further documentation can be found <a href="https://github.com/dmg-photobook/photobook_dataset/tree/master/segmentation" target="_blank">here</a>. <br /> <br /> 
 
+The produced output files can be found <a href="https://github.com/dmg-photobook/photobook_dataset/raw/master/reference_chain_data.zip" target="_blank">here</a> (zipped, 5.59MB).
 
 
 
