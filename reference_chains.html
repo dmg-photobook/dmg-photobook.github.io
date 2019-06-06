@@ -55,7 +55,121 @@
             <div class="inner">
               <h1>Reference Chains</h1>  
 
-Under development - coming soon.
+              Collecting reference chains from dialogue data is
+a non-trivial task which normally requires manual annotation. Here we propose
+a simple procedure to automatically extract reference chains made up of dialogue segments. A dialogue segment is defined as a collection of consecutive utterances that, as a whole, discuss a given
+target image and include expressions referring to
+it. <b>All dialogue segments within a game that refer
+to the same target image form its reference chain</b>.
+In order to automatically segment the collected
+dialogues in this way, <b>we developed a rule-based
+heuristics exploiting participants’ image labelling
+actions to detect segment boundaries and their respective targets</b>. <br /><br />
+
+<h2> The Heuristics </h2>
+
+Due
+to the spontaneous and unrestricted nature of the
+PhotoBook dialogues, participant labelling actions do not always indicate segment boundaries
+as cleanly as possible. To improve the quality of
+extracted dialogue segments and reference chains,
+we therefore developed a more context-sensitive
+heuristics to automate segmentation. <b>The heuristics is implemented as a binary decision tree that
+uses labelling actions as well as any preceding and
+subsequent messages</b> and additional labelling actions to better decide on segment boundaries and
+associated target images. It considers 32 combinations of eight different factors. The first case of
+the heuristics, for example, states that if <br /><br />
+<ol>
+<li> the current turn is a message, </li>
+<li> the previous turn was an image labelling action, </li>
+<li> the previous turn was by the other participant,</li>
+<li> the next turn is an image selection action,</li>
+<li> the next turn is by the current participant,</li>
+<li> the next labelling action assigns a common label,</li>
+<li> the other participant’s previous labelling and
+the current participant’s next labelling address
+the same target image, and</li>
+<li> there is a non-empty, currently developing dialogue segment,</li>
+</ol>
+then we assume that after one speaker selected an
+image as common, the other speaker makes one
+utterance and marks the same image as common,
+which is resolved by saving the currently developing segment with the common image as referent
+and initialising a new segment with the trailing
+utterance of the second speaker. This prevents
+creating a segment with just the trailing utterance
+(that cannot be a complete segment) which would
+be the naive decision if segmenting was based
+solely on labelling actions. Other cases include
+whether the next turn is a message by the other
+participant followed by them labelling a second
+image as different (likely to indicate that two
+images were discussed and the segment should
+be extended by the following message as well as
+the second target image) or whether none of the
+preceding and subsequent turns contains labelling
+actions (indicating an ongoing dialogue segment).<br /><br />
+
+The full heuristics can be viewed <a href="segmentation_heuristics.html">here</a>. <br /><br />
+
+<h2>Sample Chain</h2>
+
+The following shows a typical example of an automatically extracted chain of dialogue segments
+associated with the following image: <br /><br />
+
+<img src="images/coco_sample.jpg" alt="" /><br /><br />
+
+<blockquote>
+<b>B</b>: Hello <br />
+<b>A</b>: Hi <br />
+<b>A</b>: Do you have a woman with a black 
+coat with buttons, glasses and a piece 
+of pizza on table <br />
+<b>B</b>: no <br />
+<hr>
+<b>A</b>: Lady with black shirt, glasses with pizza on table? <br />
+<b>B</b>: yes <br />
+
+<b>A</b>: Table with orange bowl with lemons and
+liquor, cups? <br />
+<b>B</b>: no <br />
+<hr>
+<b>A</b>: Orange bowl with lemons, liquor? <br />
+<b>B</b>: lady pizza <br />
+<b>A</b>: No lady pizza <br />
+<b>B</b>: yes <br />
+<hr>
+<b>B</b>: woman and pizza <br />
+<b>A</b>: Empty kitchen wood coloured cabinets? <br />
+<b>A</b>: No woman pizza <br />
+<b>B</b>: no <br />
+</blockquote>
+
+<h2>Segmentation Evaluation and Validation</h2>
+
+72% of the
+extracted segments are linked to only one target;
+25% to two. Moreover, reference chains do not
+necessarily contain one segment for each of the
+five game rounds. They may contain fewer or
+more segments than rounds in a game, since participants may discuss the same image more than
+once in a single round and some of the extracted
+chains may be noisy, as explained in the evaluation
+section below. 75% of the automatically extracted
+chains contain three to six segments. <br /><br />
+
+
+To evaluate the segmentation, two
+annotators independently reviewed segments extracted from 20 dialogues. These segments were
+annotated by marking all utterances u in a segment
+S with target images I that refer to an image i<sub>0</sub>
+where i<sub>0</sub> ∈ I to determine precision, and marking
+all directly preceding and succeeding utterances u<sub>0</sub>
+outside of a segment S that refer to a target image
+i ∈ I to determine recall. Additionally, if a segment S did not include any references to any of its
+target images I, it was labelled as improper. 95%
+of annotated segments were assessed to be proper
+(Cohen’s κ of 0.87), with 28.4% of segments containing non-target references besides target references (Cohen’s κ of 0.97). Recall across all reviewed segments is 99% (Cohen’s κ of 0.93).
 
 </div>
           </div>
