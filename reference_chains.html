@@ -59,7 +59,7 @@
               <h1>Reference Chains</h1> 
               
               <p>In PhotoBook, participants can freely interact via chat. The dialogues thus include different types of dialogue act. 
-                In <emph>Refer, Reuse, Reduce: Grounding Subsequent References in Visual and Conversational Contexts</emph>, we concentrate 
+                In <b>Refer, Reuse, Reduce: Grounding Subsequent References in Visual and Conversational Contexts</b>, we concentrate 
                 on a specific type of dialogue contribution, referring utterances, so we extract all messages that contain an image description 
                 and their corresponding image target from the PhotoBook dialogues. The extraction procedure is described in our
                 <a href="reference_chains.html">paper</a></li> and the corresponding code is on our GitHub <a href="reference_chains.html">repository</a></li>.
@@ -68,15 +68,19 @@
     
               
         
-            <a href="#heuristics">Segmentation Heuristics</a><br />
+<!--             <a href="#heuristics">Segmentation Heuristics</a><br />
             <a href="#sample">Sample Segment Chain</a><br />
             <a href="#evaluation">Segmentation Evaluation and Validation</a><br />
             <a href="#chain_dataset">Segment Chain Data Set</a><br />
             <br />
-            <br /> 
+            <br />  -->
 
-              Collecting reference chains from dialogue data is
-                a non-trivial task which normally requires manual annotation. In <emph>The PhotoBook Dataset: Building Common Ground through Visually Grounded Dialogue</emph>, we propose
+              
+
+<h2 id="heuristics"> Segmentation Heuristics </h2>
+
+Collecting reference chains from dialogue data is
+a non-trivial task which normally requires manual annotation. In <b>The PhotoBook Dataset: Building Common Ground through Visually Grounded Dialogue</b>, we propose
 a simple procedure to automatically extract reference chains made up of dialogue segments. A dialogue segment is defined as a collection of consecutive utterances that, as a whole, discuss a given
 target image and include expressions referring to
 it. <b>All dialogue segments within a game that refer
@@ -85,8 +89,6 @@ In order to automatically segment the collected
 dialogues in this way, <b>we developed a rule-based
 heuristics exploiting participants’ image labelling
 actions to detect segment boundaries and their respective targets</b>. <br /><br />
-
-<h2 id="heuristics"> Segmentation Heuristics </h2>
 
 Due
 to the spontaneous and unrestricted nature of the
