@@ -58,6 +58,7 @@
             <div class="inner">
               <h1>Reference Chains</h1> 
               
+              <h2>Refer, Reuse, Reduce: Grounding Subsequent References in Visual and Conversational Contexts</h2>
               <p>In PhotoBook, participants can freely interact via chat so the dialogues include different types of dialogue act. 
                 In <b>Refer, Reuse, Reduce: Grounding Subsequent References in Visual and Conversational Contexts</b>, we concentrate 
                 on a specific type of dialogue contribution, referring utterances, so we extract all messages that contain an image description 
@@ -76,8 +77,9 @@
             <br />  -->
 
               
-
-<h2 id="heuristics"> Segmentation Heuristics </h2>
+<h2>The PhotoBook Dataset: Building Common Ground through Visually Grounded Dialogue</h2>
+  
+<h3 id="heuristics"> Segmentation Heuristics </h3>
 
 Collecting reference chains from dialogue data is
 a non-trivial task which normally requires manual annotation. In <b>The PhotoBook Dataset: Building Common Ground through Visually Grounded Dialogue</b>, we propose
@@ -134,7 +136,7 @@ actions (indicating an ongoing dialogue segment).<br /><br />
 
 The full heuristics can be viewed <a href="segmentation_heuristics.html">here</a>. <br /><br /> The files necessary to replicate the automatic extraction of segment chains can be downloaded from github <a href="https://github.com/dmg-photobook/photobook_dataset/tree/master/segmentation" target="_blank">here</a>, or as a zipped archive <a href="https://github.com/dmg-photobook/photobook_dataset/raw/master/segmentation.zip" target="_blank">here.</a> To execute the files, place the <code>log</code> folder into the project's <code>data</code> folder. Further documentation can be found <a href="https://github.com/dmg-photobook/photobook_dataset/tree/master/segmentation" target="_blank">here</a>. <br /> <br /> 
 
-<h2 id="sample">Sample Segment Chain</h2>
+<h3 id="sample">Sample Segment Chain</h3>
 
 The following shows a typical example of an automatically extracted chain of dialogue segments
 associated with the following image: <br /><br />
@@ -167,7 +169,7 @@ liquor, cups? <br />
 <b>B</b>: no <br />
 </blockquote>
 
-<h2 id="evaluation">Segmentation Evaluation and Validation</h2>
+<h3 id="evaluation">Segmentation Evaluation and Validation</h3>
 
 72% of the
 extracted segments are linked to only one target;
@@ -193,7 +195,7 @@ target images I, it was labelled as improper. 95%
 of annotated segments were assessed to be proper
 (Cohen’s κ of 0.87), with 28.4% of segments containing non-target references besides target references (Cohen’s κ of 0.97). Recall across all reviewed segments is 99% (Cohen’s κ of 0.93). <br/><br/>
 
-<h2 id="chain_dataset">Segment Chain Data Set</h2>
+<h3 id="chain_dataset">Segment Chain Data Set</h3>
 
 The automatically extracted co-reference chains
 per target image were split into three disjoint sets
