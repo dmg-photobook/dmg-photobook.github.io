@@ -43,9 +43,13 @@
 						<h2>Menu</h2>
 						<ul>
 							<li><a href="index.html">Home</a></li>
-							<li><a href="datasets.html">Datasets</a></li>
-							<li><a href="code_models.html">Code & Models</a></li>
-							<li><a href="papers.html">Bibliography</a></li>
+							<li><a href="dataset.html">The Dataset</a></li>
+							<li><a href="analysis.html">Analysis</a></li>
+							<li><a href="reference_chains.html">Reference Chains</a></li>
+							<li><a href="models.html">Models</a></li>
+							<li><a href="papers.html">Papers</a></li>
+							<li><a href="downloads.html">Downloads</a></li>
+							<!-- <li><a href="elements.html">Elements</a></li>-->
 						</ul>
 					</nav>
 
@@ -63,10 +67,10 @@
 									<span class="image">
 										<img src="images/pic01.jpg" alt="" />
 									</span>
-									<a href="datasets.html">
-										<h2>Datasets</h2>
+									<a href="dataset.html">
+										<h2>Dataset</h2>
 										<div class="content">
-											<p>Download the full PhotoBook dataset and the Reference Chain datasets.</p>
+											<p>A collection of 2,500 visually-grounded dialogue interactions designed to investigate shared dialogue history.</p>
 										</div>
 									</a>
 								</article>
@@ -74,10 +78,10 @@
 									<span class="image">
 										<img src="images/pic02.jpg" alt="" />
 									</span>
-									<a href="code_models.html">
-										<h2>Code and Models</h2>
+									<a href="analysis.html">
+										<h2>Analysis</h2>
 										<div class="content">
-											<p>Trained models and code for PhotoBook-related tasks as well as scripts for data analysis.</p>
+											<p>An in-depth analysis of the central phenomena exhibited by the collected data.</p>
 										</div>
 									</a>
 								</article>
@@ -85,58 +89,82 @@
 									<span class="image">
 										<img src="images/pic05.jpg" alt="" />
 									</span>
-									<a href="papers.html">
-										<h2>Bibliography</h2>
+									<a href="reference_chains.html">
+										<h2>Reference Chains</h2>
 										<div class="content">
-											<p>Papers related to PhotoBook.</p>
+											<p>A heuristics developed to automatically extract chains of image mentions generated during a conversation.</p>
+										</div>
+									</a>
+								</article>
+								<article class="style4">
+									<span class="image">
+										<img src="images/pic04.jpg" alt="" />
+									</span>
+									<a href="models.html">
+										<h2>Models</h2>
+										<div class="content">
+											<p>A set of baseline models to predict mentioned images based on current utterances and dialogue history.</p>
+										</div>
+									</a>
+								</article>
+								<article class="style5">
+									<span class="image">
+										<img src="images/pic05.jpg" alt="" />
+									</span>
+									<a href="papers.html">
+										<h2>Papers</h2>
+										<div class="content">
+											<p>Papers about the PhotoBook task, datasets and models.</p>
+										</div>
+									</a>
+								</article>
+								<article class="style6">
+									<span class="image">
+										<img src="images/pic06.jpg" alt="" />
+									</span>
+									<a href="downloads.html">
+										<h2>Downloads</h2>
+										<div class="content">
+											<p>Download the dataset and other resources.</p>
 										</div>
 									</a>
 								</article>
 							</section>
 						</div>
 						<div class="inner">
-
-					<hr>
-					<br />
-
+							<br />
+							<hr>
+							<br />
 					<h3>About the PhotoBook Task and Dataset</h3>
-					<p>
-						The past few years have seen an immense interest in
-						<b>developing and training computational agents for visually-grounded dialogue</b>,
-						the task of using natural language to communicate about visual input.
-						The models developed for this task often focus on specific aspects such as image labelling,
-						object reference, or question answering, but fail to produce consistent outputs over a conversation.
-				  We  believe that this shortcoming is mostly due to a <b>missing representation of
-						the participant's shared common ground</b> which develops and extends during an interaction.
+					<p>The past few years have seen an immense interest in <b>developing and training computational agents for visually-grounded dialogue</b>, the task of using natural language to communicate about visual input. The models developed for this task often focus on specific aspects such as image labelling, object reference, or question answering, but fail to produce consistent outputs over a conversation.
+					<br />
+					<br />
+					We  believe that this shortcoming is mostly due to a <b>missing representation of the participant's shared common ground</b> which develops and extends during an interaction.
 
-					<br/><br/>
-					To  facilitate  progress  towards  more  consistent and effective conversation,
-						we introduce the <b>PhotoBook Dataset:  a  large  collection  of  2,500  human-human,
-						visually-grounded and goal-oriented  English conversations between   pairs of   participants</b>.
+				To  facilitate  progress  towards  more  consistent and effective conversation,  we introduce the <b>PhotoBook Dataset:  a  large  collection  of  2,500  human-human, visually-grounded and goal-oriented  English conversations between   pairs of   participants</b>.</p>
 
-					<br/><br/>
-				  <b>The PhotoBook Dataset was collected using a dedicated conversation task called the PhotoBook Task</b>. In the PhotoBook task, two participants are paired for an online multi-round image identification game. In this game they are  shown collections of images which resemble the page of a photo book. Each of these collections is a randomly ordered grid of six similar images depicting everyday scenes extracted from the MS COCO Dataset. On each page of the photo book, some of the images are present in the displays of both participants (the <b>common images</b>). The other images are each shown to one of the participants only (the <b>different images</b>). Three of the images in each display are highlighted through a yellow bar under the picture. The participants are tasked to mark these highlighted  target images as either common or different by chatting with their partner. A full game consists of <b>five consecutive rounds</b>, where some of the previously displayed images will re-appear in later rounds, prompting participants to <b>re-refer</b> to them multiple times.
-				  </p>
+
+
+				    <p><b>The PhotoBook Dataset was collected using a dedicated conversation task called the PhotoBook Task</b>. In the PhotoBook task, two participants are paired for an online multi-round image identification game. In this game they are  shown collections of images which resemble the page of a photo book. Each of these collections is a randomly ordered grid of six similar images depicting everyday scenes extracted from the MS COCO Dataset. On each page of the photo book, some of the images are present in the displays of both participants (the <b>common images</b>). The other images are each shown to one of the participants only (the <b>different images</b>). Three of the images in each display are highlighted through a yellow bar under the picture. The participants are tasked to mark these highlighted  target images as either common or different by chatting with their partner. A full game consists of five consecutive rounds, where some of the previously displayed images will re-appear in later rounds, prompting participants to re-refer to them multiple times.
+				    </p>
  <span class="image main"><img src="images/screenshot_game.png" alt="" /></span>
 
-				  <p>As a result of a carefully designed setup, dialogues in the PhotoBook dataset
-							contain multiple descriptions of each of the target images and thus provide a
-							<b>valuable resource for investigating participant cooperation, and specifically
-								collaborative referring expression generation and resolution</b>
-							with respect to the conversation's common ground.
+				    <p>
 
-					<br/><br/>
-					During data collection, we recorded anonymised participant IDs,
-						the author, timestamp and content of all sent messages, label selections and button clicks,
-						plus self-reported collaboration performance scores.
-						<b>The dataset contains a total of 2,502 completed games with 164,615 utterances,
-							130,322 actions, and spans a vocabulary of 11,805 unique tokens. </b>
-					</p>
+				    	As a result of a carefully designed setup, dialogues in the PhotoBook dataset
+contain multiple descriptions of each of the target images and thus provide a<b> valuable resource for investigating participant cooperation, and specifically collaborative referring expression generation and resolution</b> with respect to the conversation's common ground.
+</p>
+
+<p>
+	During data collection, we recorded anonymised participant IDs,
+the author, timestamp and content of all sent messages, label selections and button clicks, plus self-reported collaboration performance scores.
+<b>The dataset contains a total of 2,502 completed games with 164,615 utterances, 130,322 actions, and spans a vocabulary of 11,805 unique tokens. </b>
+	</p>
 
 		For a detailed account, see our paper
 		<blockquote>
 		Janosch Haber, Tim Baumgärtner, Ece Takmaz, Lieke Gelderloos, Elia Bruni, and Raquel Fernández. <br />
-		<a href="https://www.aclweb.org/anthology/P19-1184/" target="_blank"><b>The PhotoBook Dataset: Building Common Ground through Visually Grounded Dialogue.</b></a><i> <br />
+		<a href="https://arxiv.org/abs/1906.01530" target="_blank"><b>The PhotoBook Dataset: Building Common Ground through Visually Grounded Dialogue.</b></a><i> <br />
 		In Proceedings of the 57th Annual Meeting of the Association for Computational Linguistics (ACL)</i>, 2019
 	</blockquote>
 	and Janosch Haber's Master's Thesis
