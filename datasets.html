@@ -54,10 +54,15 @@
 						<div class="inner">
 							<h1>Datasets</h1>
 
+</p>
+
 					<ul>
 						<li><a href="#intro">The full PhotoBook Dataset</a></li>
-						<li><a href="reference_chains.html">Reference Chain Datasets</a> </li>
+						<li><a href="#utterances">Utterance-based Reference Chains</a> </li>
+						<li> <a href="#segments">Dialogue Segment Reference Chains</a> </li>
 					</ul>
+						<p>In the context of PhotoBook, a reference chain is a sequence of "elements" within a given game that refer to the same target image.
+  We have extracted two different datasets of reference chains from the PhotoBook dialogues.</p>
 
 <hr>
 
@@ -88,7 +93,7 @@
 		For a detailed account of the dataset and data collection process, see our paper
 		<a href="https://arxiv.org/abs/1906.01530" target="_blank"><b>The PhotoBook Dataset: Building Common Ground through Visually Grounded Dialogue</b></a>
 		and Janosch Haber's Master's Thesis
-		<a href="https://esc.fnwi.uva.nl/thesis/centraal/files/f738860517.pdf" target="_blank"><b>How should we call it? - Introducing the PhotoBook Conversation Task and Dataset <br />for Training Natural Referring Expression Generation in Artificial Dialogue Agents.
+		<a href="https://esc.fnwi.uva.nl/thesis/centraal/files/f738860517.pdf" target="_blank"><b>How should we call it? - Introducing the PhotoBook Conversation Task and Dataset <br />for Training Natural Referring Expression Generation in Artificial Dialogue Agents.</a>
 		Further details can be found on the <a href="pb_dataset.html">dataset information page></a>.</p>
 
 
@@ -105,6 +110,35 @@ The PhotoBook Dataset can be cloned from the Github repository at <a href="https
 
 <a href="https://raw.githubusercontent.com/dmg-photobook/photobook_dataset/master/processor.py" target="_blank">The PhotoBook Processor</a> (Python class, 5kB)<br /><br />
 
+						
+<hr>
+
+<h2 id="utterances">Utterance-based Reference Chains</h2>
+
+              <p>In PhotoBook, participants can freely interact via chat so the dialogues include different types of dialogue act.
+                In our paper <b><a href="">Refer, Reuse, Reduce: Grounding Subsequent References in Visual and Conversational Contexts</a></b>, we concentrate
+                on a specific type of dialogue contribution, referring utterances. From each PhotoBook game between two specific participants,
+                we automatically extract all the key messages that contain an image description referring to a given image target.
+                The extraction procedure is described in the paper and the corresponding code is on our <a href="">GitHub repository</a>.
+                The result of this procedure is a new dataset of reference chains made up of 16,525 reference chains and a total of 41,340 referring utterances.
+                Contact <a href="http://gmario.eu/">Mario Giulianelli</a> if you have any questions.
+              </p>
+	      <p><a href="">Download the utterance-based reference chains</a> <br /> <br />
+
+
+
+<hr>
+<h2 id="segments">Segment-based Reference Chains</h2>
+
+<p>In our paper <b><a href="https://www.aclweb.org/anthology/P19-1184/">The PhotoBook Dataset: Building Common Ground through Visually Grounded Dialogue</a></b>,
+  we propose a simple procedure to automatically extract reference chains made up of dialogue segments.
+  A dialogue segment is defined as a collection of consecutive utterances that, as a whole, discuss a given
+  target image and include expressions referring to it. The documented segment chain dataset creator can be downloaded from this <a href="https://github.com/dmg-photobook/photobook_dataset/tree/master/segmentation" target="_blank">GitHub repository</a>
+<!--or as a zipped archive <a href="https://github.com/dmg-photobook/photobook_dataset/raw/master/segmentation.zip" target="_blank">here</a>. -->
+(to execute the files, place the <code>logs</code> folder into the project's <code>data</code> folder). On this <a href="reference_chains.html">dataset information page</a> you can find sample segment chains and relevant statistics of the segment chains dataset, as well as 
+	additional information about the segmentation heuristics and their evaluation and validation.</p>
+
+<p><a href="https://github.com/dmg-photobook/photobook_dataset/raw/master/reference_chain_data.zip">Download the segment-based reference chains</a>
 
 						</div>
 					</div>
