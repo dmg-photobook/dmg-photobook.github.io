@@ -40,30 +40,106 @@
 					</header>
 
 				<!-- Menu -->
-					<nav id="menu">
+				<nav id="menu">
 						<h2>Menu</h2>
 						<ul>
-							<li><a href="index.html">Home</a></li>
-							<li><a href="dataset.html">The Dataset</a></li>
-							<li><a href="analysis.html">Analysis</a></li>
-							<li><a href="reference_chains.html">Reference Chains</a></li>
-							<li><a href="models.html">Models</a></li>
-							<li><a href="team.html">Team</a></li>
-							<li><a href="downloads.html">Downloads</a></li>
-							<!-- <li><a href="elements.html">Elements</a></li>-->
+								<li><a href="index.html">Home</a></li>
+								<li><a href="datasets.html">Datasets</a></li>
+								<li><a href="code_models.html">Code & Models</a></li>
+								<li><a href="papers.html">Bibliography</a></li>
 						</ul>
 					</nav>
 				<!-- Main -->
 					<div id="main">
 						<div class="inner">
 							<h1>The PhotoBook Dataset</h1>	
+						<a href="#dialogue_samples">Dialogue Samples</a><br />
 						<a href="#architecture">Dataset Architecture</a><br />
 						<a href="#processor">Dataset Processor</a><br />
-						<a href="#visualisation">Visualisation</a><br />
-						<a href="downloads.html">Download</a>
+						<a href="#visualisation">Visualisation</a>
 						<br />
 						<br />
 
+
+<h2 id="dialogue_samples">Dialogue Samples</h2>
+
+Through the goal-oriented nature of participants' interactions in the PhotoBook dataset, we do not only collect image descriptions but rather the full, <b>collaborative process of establishing, grounding and refining referring expressions</b> throughout the  subsequent rounds of the PhotoBook task. As a result, we capture a wide range of <b>dialogue acts such as clarification questions, corrections, extensions, (self-)repairs as well as interactions concerning game mechanics</b>. Consider for example the following interactions: <br /><br />
+
+<blockquote>
+<b>A</b>: <i>Man with dog on lap looking at his computer?</i> <br />
+<b>B</b>: <i>I don't have that, but could it be a TV in yours? Mine has a man sitting with his dog watching TV.</i>  <br />
+<b>A</b>: <i>yes, TV - sorry!</i>  <br />
+<b>B</b>: <i>Okay.</i> <br />
+</blockquote>
+<blockquote>
+<b>A</b>: <i>Do you have someone on a big motorcycle and their head isn't visible?</i>  <br />
+<b>A</b>: <i>There is a blue car in the background</i> <br />
+<b>B</b>: <i>No</i> <br />
+<b>A</b>: <i>In any of the pictures?</i> <br />
+<b>B</b>: <i>No</i> <br />
+<b>A</b>: <i>Okay, thank you</i> <br />
+</blockquote>
+<blockquote>
+<b>B</b>: <i>Woman with hot dog</i> <br />
+<b>A</b>: <i>Older girl with glasses holding a hot dog?</i> <br />
+<b>B</b>: <i>sitting</i> <br />
+<b>A</b>: <i>Yeah</i> <br />
+
+</blockquote>
+<blockquote>
+<b>A</b>: <i>Do you have a picture with a lady in a fancy dress standing by a motorcycle?</i> <br />
+<b>B</b>: <i>no</i> <br />
+<b>B</b>: <i>wait</i> <br />
+<b>B</b>: <i>yes, in black?</i> <br />
+<b>A</b>: <i>Yes, it's a black dress with white trim.</i> <br />
+</blockquote>
+<blockquote>
+
+<b>A</b>: <i>Is there anything else?</i> <br />
+<b>B</b>: <i>Do you have the old lady in the white hat/blue pants reading?</i> <br />
+<b>A</b>: <i>Yes, I do.</i> <br />
+<b>B</b>: <i>Okay, that's all for me</i> <br />
+</blockquote>
+
+In most cases, referring expressions agreed upon during the first rounds of a game are further refined and optimised while re-referring to the same target object in later rounds of the game. These <b>refinements often are manifested in an omission of detail while retaining core features of the target object</b>. <br /><br />
+
+<blockquote>
+<b>A</b>: <i>Do you have a boy with a teal coloured shirt with yellow holding a bear with a red shirt?</i> <br />
+<b>B</b>: <i>Yes</i> <br />
+- <br />
+<b>B</b>: <i>Boy with teal shirt and bear with red shirt?</i> <br />
+<b>A</b>: <i>Yes!</i> <br />
+- <br />
+<b>A</b>: <i>Teal shirt boy?</i> <br />
+<b>B</b>: <i>No</i> <br />
+</blockquote>
+
+<b>Collecting all utterances that refer to a specific target image during a given game creates its co-reference chain</b>. Consider the following examples of first and last references from co-reference chains manually extracted from the PhotoBook dataset: <br /><br />
+
+<blockquote>
+<b>F</b>: <i>Two girls near TV playing wii. One in white shirt, one in grey</i><br />
+<b>L</b>: <i>Girls in white and grey</i><br />
+</blockquote>
+
+<blockquote>
+<b>F</b>: <i>A person that looks like a monk sitting on a bench. He's wearing a blue and white ball cap</i><br />
+<b>L</b>: <i>The monk </i><br />
+</blockquote>
+
+<blockquote>
+<b>F</b>: <i>A white, yellow, and blue bus being towed by a blue tow truck</i><br />
+<b>L</b>: <i>Yellow/white bus being towed by blue</i><br />
+</blockquote>
+
+A sample of full game of five rounds of participant interactions can be seen <a href="transcript_example.html" target="_blank">here</a>.<br /><br />
+
+<h2 id="architecture">Dataset Architecture</h2>
+
+<b>The PhotoBook Dataset can be downloaded <a href="downloads.html">here</a></b>.<br /><br />
+
+The PhotoBook Dataset contains 2502 complete dialogues collected through the PhotoBook Conversation task. The dataset is anonymized but allows for tracking specific users over multiple games through a unique agent ID.
+
+<b>The raw PhotoBook Dataset is a collection of JSON files with three levels of data</b>, pertaining either to the <i>Game</i>, one of the five <i>Game Rounds</i> or one of the variable number of <i>Messages</i> in a game round. The data is structured as follows: <br /><br />
 
 <h2 id="architecture">Dataset Architecture</h2>
 
