@@ -3305,3 +3305,9 @@ input, select, textarea {
 			}
 
 		}
+
+.image-txt-container {
+  display:flex;
+  align-items:center;
+  flex-direction: row;
+}
